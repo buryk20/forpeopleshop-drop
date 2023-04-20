@@ -211,6 +211,7 @@
     align-items: center;
 
     padding-left: 80px;
+    gap: 32px;
 
     @include __1160 {
       padding-left: 40px;
@@ -224,24 +225,20 @@
     }
   }
 
+  &__benefit-number-wrp {
+    width: 66px;
+    height: 66px;
+
+    @extend %centre-flex;
+
+    border-radius: 50%;
+    background-color: $color-yelow;
+  }
+
   &__benefit-number {
-    @include font($font-moserrat, 70px, 500, 85px, left);
+    @include font($font-moserrat, 36px, 500, 85px, left);
 
-    color: $color-yelow;
-
-    width: 130px;
-
-    @include __1160 {
-      width: 80px;
-
-      font-size: 55px;
-      line-height: 120%;
-    }
-
-    @include __860 {
-      font-size: 40px;
-      line-height: 49px;
-    }
+    color: $color-white;
   }
 
   &__benefit-arrow {
@@ -547,9 +544,9 @@
 
     width: 100%;
 
-    background: #fcc730;
+    background: #f68132;
     border-radius: 8px;
-    border: 2px solid #fcc730;
+    border: 2px solid #f68132;
 
     @include font($font-noto-sans-mono, 18px, 700, 25px, left);
 
@@ -824,7 +821,6 @@
     }
 
     @include __860 {
-
       position: relative;
 
       &.two {
@@ -868,7 +864,7 @@
       height: 36px;
       width: 36px;
 
-      margin-bottom: 40px;
+      margin-bottom: 16px;
     }
   }
 
@@ -1055,7 +1051,11 @@
     flex-direction: column;
     align-items: center;
 
-    background-color: $color-yelow;
+    background: linear-gradient(
+      0deg,
+      rgba(247, 92, 44, 1) 0%,
+      rgba(253, 187, 45, 1) 100%
+    );
     border-radius: 8px;
 
     padding: 50px 16px;
@@ -1254,7 +1254,6 @@
     width: 100%;
 
     padding: 0 16px 0 16px;
-
 
     display: flex;
     justify-content: center;
