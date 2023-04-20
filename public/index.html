@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <title>LogicLink</title>
+</head>
+
+<body>
+    <header data-header data-mob-menu class="header">
+        <a href="#">
+            <img class="header__logo" src="img/logo-header.png" alt="forpeopleshop-drop.com.ua">
+        </a>
+        <div data-wrp-menu-mob class="header__wrp-r none">
+
+            <div class="header__nav-wrp">
+                <a data-nav-header class="header__nav-item active" href="#about-us">
+                    О нас
+                </a>
+                <a data-nav-header class="header__nav-item" href="#instruction">
+                    Инструкция
+                </a>
+                <a data-nav-header class="header__nav-item" href="#storage">
+                    Хранение
+                </a>
+                <a data-nav-header class="header__nav-item" href="#special-offer">
+                    Спецпредложение
+                </a>
+                <a data-nav-header class="header__nav-item" href="#payment">
+                    Оплата
+                </a>
+                <a data-nav-header class="header__nav-item" href="#contacts">
+                    Контакты
+                </a>
+            </div>
+            <div class="header__languages-wrp">
+                <div data-languages-btn class="header__languages-menu-active-item-wrp ">
+                    <p>ua</p>
+                    <svg class="header__languages-menu-active-item-icon" width="10" height="7" viewBox="0 0 10 7"
+                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M1.70711 0.292893C1.31658 -0.097631 0.683417 -0.097631 0.292893 0.292893C-0.0976313 0.683417 -0.0976313 1.31658 0.292893 1.70711L1.70711 0.292893ZM5 5L4.29289 5.70711L5 6.41421L5.70711 5.70711L5 5ZM9.70711 1.70711C10.0976 1.31658 10.0976 0.683417 9.70711 0.292893C9.31658 -0.0976313 8.68342 -0.0976313 8.29289 0.292893L9.70711 1.70711ZM0.292893 1.70711L4.29289 5.70711L5.70711 4.29289L1.70711 0.292893L0.292893 1.70711ZM5.70711 5.70711L9.70711 1.70711L8.29289 0.292893L4.29289 4.29289L5.70711 5.70711Z" />
+                    </svg>
+                </div>
+                <div data-languages-item-wrp class="header__languages-menu">
+                    <div data-languages-item class="header__languages-menu-item">
+                        <p>ru</p>
+                    </div>
+                    <div data-languages-item class="header__languages-menu-item">
+                        <p>en</p>
+                    </div>
+                </div>
+            </div>
+            <button data-color-switching-wrp class="header__color-change">
+                <img data-btn-color-switching class="header__color-change-night active" src="icon/black-theme-icon.svg"
+                    alt="black theme">
+                <span class="header__color-change-circle"></span>
+                <img data-btn-color-switching class="header__color-change-sun" src="icon/sun-header-icon.svg" alt="sun">
+            </button>
+            <a class="header__phone" href="tel:+380800222333">
+                <p>093 312 44 83</p>
+            </a>
+        </div>
+        <div data-menu-mob-conteiner class="header-mob">
+            <a href="#">
+                <img class="header-mob__logo-size" src="./img/logo-header.png" alt="forpeopleshop-drop.com.ua">
+            </a>
+            <div data-mob-menu-btn class="header-mob__mob-menu">
+                <span class="header-mob__mob-menu-line header-mob__mob-menu-line-r-t"></span>
+                <span class="header-mob__mob-menu-line header-mob__mob-menu-line-r-d"></span>
+                <span class="header-mob__mob-menu-line header-mob__mob-menu-line-l-t"></span>
+                <span class="header-mob__mob-menu-line header-mob__mob-menu-line-l-d"></span>
+            </div>
+        </div>
+        <div class="line__wrp">
+            <div class="line"></div>
+        </div>
+    </header>
+    <div data-pop-up-form-wrp class="pop-up-form__wrp">
+        <form data-pop-up-form class="pop-up-form" action="">
+            <div data-pop-up-btn-close class="pop-up-form__btn-wrp">
+                <span class="pop-up-form__btn-line pop-up-form__btn-line-r"></span>
+                <span class="pop-up-form__btn-line pop-up-form__btn-line-l"></span>
+            </div>
+            <p class="pop-up-form__form-header">Оставьте свои данные и наш менеджер как можно скорее свяжется с вами</p>
+            <div class="pop-up-form__form-input-wrp">
+                <input class="pop-up-form__form-input" type="text" required placeholder="ФИО*">
+                <label class="pop-up-form__form-label">ФИО*</label>
+                <p class="pop-up-form__form-input-error">Введите ФИО</p>
+            </div>
+            <div class="pop-up-form__form-input-wrp">
+                <input class="pop-up-form__form-input" type="email" placeholder="E-mail*">
+                <label class="pop-up-form__form-label">E-mail*</label>
+                <p class="pop-up-form__form-input-error">Некорректная электронная почта</p>
+            </div>
+            <div class="pop-up-form__form-input-wrp">
+                <input class="pop-up-form__form-input" type="tel" placeholder="Телефон*">
+                <label class="pop-up-form__form-label">Телефон*</label>
+                <p class="pop-up-form__form-input-error">Неподходящий формат телефона</p>
+            </div>
+            <div class="pop-up-form__form-input-wrp">
+                <input class="pop-up-form__form-input" type="text" placeholder="Комментарий*">
+                <label class="pop-up-form__form-label">Комментарий*</label>
+                <p class="pop-up-form__form-input-error">Превышен лимит символов</p>
+            </div>
+            <label class="pop-up-form__form-checkbox-wrp">
+                Я погоджуюся з <a class="pop-up-form__form-checkbox-link" href="#">політикою конфіденційності
+                    компанії</a>
+                <input class="pop-up-form__form-checkbox" type="checkbox" checked="checked">
+                <span class="pop-up-form__form-fake-checkbox"></span>
+            </label>
+            <button class="pop-up-form__form-btn">Оставить контакты</button>
+        </form>
+    </div>
+    <main data-animation-wrp class="main">
+        <div class="main-wrp">
+            <div class="main-picture">
+                <p class="main-picture__header">БАННЕР О ХРАНЕНИИ</p>
+                <p class="main-picture__text">и немного о самом баннере</p>
+            </div>
+            <div id="about-us" data-item-nav-page class="about-us">
+                <p class="section-header">О НАС</p>
+                <div class="about-us__content">
+                    <div class="about-us__video-and-description-wrp">
+                        <div class="about-us__video-wrp">
+                            <iframe class="about-us__video" src="https://www.youtube.com/embed/Oy0nVlkVvMg"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="about-us__description">
+                            <p class="about-us__description-first">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                minim veniam, quis nostrud exercitation ullamco laboris nisi</p>
+                            <p class="about-us__description-second">Ut aliquip ex ea commodo consequat. Duis aute irure
+                                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                                mollit anim id est laborum.</p>
+                        </div>
+                    </div>
+                    <div class="about-us__benefits">
+                        <div class="about-us__benefits-line"></div>
+                        <div data-wow-offset="100"
+                            class="about-us__benefit wow animate__animated animate__lightSpeedInLeft">
+                            <p class="about-us__benefit-number">1</p>
+                            <svg class="about-us__benefit-arrow" width="26" height="40" viewBox="0 0 26 40" fill="none">
+                                <path
+                                    d="M0.94013 34.8191C-0.264425 35.9567 -0.318674 37.8554 0.81896 39.06C1.9566 40.2645 3.85532 40.3188 5.05987 39.1812L0.94013 34.8191ZM21 20.0001L23.0599 22.1812L25.3692 20.0001L23.0599 17.8191L21 20.0001ZM5.05987 0.819083C3.85532 -0.318555 1.9566 -0.264307 0.818963 0.940249C-0.318671 2.1448 -0.264422 4.04352 0.940133 5.18116L5.05987 0.819083ZM5.05987 39.1812L23.0599 22.1812L18.9401 17.8191L0.94013 34.8191L5.05987 39.1812ZM23.0599 17.8191L5.05987 0.819083L0.940133 5.18116L18.9401 22.1812L23.0599 17.8191Z"
+                                    fill="#0A0A0A" />
+                            </svg>
+                            <p class="about-us__benefit-text">Квалицфицированный персонал.</p>
+                        </div>
+                        <div class="about-us__benefits-line"></div>
+                        <div data-wow-delay="0.3s" data-wow-offset="150"
+                            class="about-us__benefit wow animate__animated animate__lightSpeedInLeft">
+                            <p class="about-us__benefit-number">2</p>
+                            <svg class="about-us__benefit-arrow" width="26" height="40" viewBox="0 0 26 40" fill="none">
+                                <path
+                                    d="M0.94013 34.8191C-0.264425 35.9567 -0.318674 37.8554 0.81896 39.06C1.9566 40.2645 3.85532 40.3188 5.05987 39.1812L0.94013 34.8191ZM21 20.0001L23.0599 22.1812L25.3692 20.0001L23.0599 17.8191L21 20.0001ZM5.05987 0.819083C3.85532 -0.318555 1.9566 -0.264307 0.818963 0.940249C-0.318671 2.1448 -0.264422 4.04352 0.940133 5.18116L5.05987 0.819083ZM5.05987 39.1812L23.0599 22.1812L18.9401 17.8191L0.94013 34.8191L5.05987 39.1812ZM23.0599 17.8191L5.05987 0.819083L0.940133 5.18116L18.9401 22.1812L23.0599 17.8191Z"
+                                    fill="#0A0A0A" />
+                            </svg>
+                            <p class="about-us__benefit-text">Налаженная десятилетием работы схема перевозок по Украине,
+                                как крупногабаритных грузов, так и штучных посылок.</p>
+                        </div>
+                        <div class="about-us__benefits-line"></div>
+                        <div data-wow-delay="0.6s" data-wow-offset="150"
+                            class="about-us__benefit wow animate__animated animate__lightSpeedInLeft">
+                            <p class="about-us__benefit-number">3</p>
+                            <svg class="about-us__benefit-arrow" width="26" height="40" viewBox="0 0 26 40" fill="none">
+                                <path
+                                    d="M0.94013 34.8191C-0.264425 35.9567 -0.318674 37.8554 0.81896 39.06C1.9566 40.2645 3.85532 40.3188 5.05987 39.1812L0.94013 34.8191ZM21 20.0001L23.0599 22.1812L25.3692 20.0001L23.0599 17.8191L21 20.0001ZM5.05987 0.819083C3.85532 -0.318555 1.9566 -0.264307 0.818963 0.940249C-0.318671 2.1448 -0.264422 4.04352 0.940133 5.18116L5.05987 0.819083ZM5.05987 39.1812L23.0599 22.1812L18.9401 17.8191L0.94013 34.8191L5.05987 39.1812ZM23.0599 17.8191L5.05987 0.819083L0.940133 5.18116L18.9401 22.1812L23.0599 17.8191Z"
+                                    fill="#0A0A0A" />
+                            </svg>
+                            <p class="about-us__benefit-text">Отправка передовыми почтовыми операторами. Часть
+                                отделений, которых находится прямо на территории склада.</p>
+                        </div>
+                        <div class="about-us__benefits-line"></div>
+                        <div data-wow-delay="0.8s" data-wow-offset="150"
+                            class="about-us__benefit wow animate__animated animate__lightSpeedInLeft">
+                            <p class="about-us__benefit-number">4</p>
+                            <svg class="about-us__benefit-arrow" width="26" height="40" viewBox="0 0 26 40" fill="none">
+                                <path
+                                    d="M0.94013 34.8191C-0.264425 35.9567 -0.318674 37.8554 0.81896 39.06C1.9566 40.2645 3.85532 40.3188 5.05987 39.1812L0.94013 34.8191ZM21 20.0001L23.0599 22.1812L25.3692 20.0001L23.0599 17.8191L21 20.0001ZM5.05987 0.819083C3.85532 -0.318555 1.9566 -0.264307 0.818963 0.940249C-0.318671 2.1448 -0.264422 4.04352 0.940133 5.18116L5.05987 0.819083ZM5.05987 39.1812L23.0599 22.1812L18.9401 17.8191L0.94013 34.8191L5.05987 39.1812ZM23.0599 17.8191L5.05987 0.819083L0.940133 5.18116L18.9401 22.1812L23.0599 17.8191Z"
+                                    fill="#0A0A0A" />
+                            </svg>
+                            <p class="about-us__benefit-text">Удобное хранение на четырёхуровневых, современных,
+                                стеллажах.</p>
+                        </div>
+                        <div class="about-us__benefits-line"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="instruction" data-item-nav-page class="instruction">
+                <p class="section-header">ИНСТРУКЦИЯ</p>
+                <div class="instruction__steps">
+                    <div data-wow-delay="0.6s" data-wow-offset="200"
+                        class="instruction__step wow animate__animated animate__bounceInLeft">
+                        <img class="instruction__step-img" src="img/Step_1.svg" alt="Первый шаг">
+                        <p class="instruction__step-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                        </p>
+                        <p class="instruction__step-number">001</p>
+                    </div>
+                    <svg data-wow-delay="0.5s" data-wow-offset="200"
+                        class="instruction__arrows wow animate__animated animate__bounceInLeft" width="108" height="86"
+                        viewBox="0 0 108 86" fill="none">
+                        <path
+                            d="M46.5249 68.4053C44.5395 70.3245 44.4858 73.4899 46.4051 75.4754C48.3243 77.4608 51.4897 77.5144 53.4751 75.5952L46.5249 68.4053ZM80 43.0002L83.4751 46.5952L87.194 43.0002L83.4751 39.4053L80 43.0002ZM53.4751 10.4053C51.4897 8.48605 48.3243 8.5397 46.4051 10.5251C44.4858 12.5106 44.5395 15.6759 46.5249 17.5952L53.4751 10.4053ZM53.4751 75.5952L83.4751 46.5952L76.5249 39.4053L46.5249 68.4053L53.4751 75.5952ZM83.4751 39.4053L53.4751 10.4053L46.5249 17.5952L76.5249 46.5952L83.4751 39.4053Z"
+                            fill="#0A0A0A" />
+                        <path
+                            d="M24.5249 58.7387C22.5395 60.6579 22.4858 63.8233 24.4051 65.8087C26.3243 67.7942 29.4897 67.8478 31.4751 65.9286L24.5249 58.7387ZM48 43.0003L51.4751 46.5952L55.194 43.0003L51.4751 39.4053L48 43.0003ZM31.4751 20.072C29.4897 18.1528 26.3243 18.2064 24.4051 20.1918C22.4858 22.1773 22.5395 25.3426 24.5249 27.2619L31.4751 20.072ZM31.4751 65.9286L51.4751 46.5952L44.5249 39.4053L24.5249 58.7387L31.4751 65.9286ZM51.4751 39.4053L31.4751 20.072L24.5249 27.2619L44.5249 46.5952L51.4751 39.4053Z"
+                            fill="#f5643e" />
+                    </svg>
+                    <div data-wow-delay="0.4s" data-wow-offset="200"
+                        class="instruction__step wow animate__animated animate__bounceInLeft">
+                        <img class="instruction__step-img" src="img/Call-img.svg" alt="Call">
+                        <p class="instruction__step-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                        </p>
+                        <p class="instruction__step-number">002</p>
+                    </div>
+                    <svg data-wow-delay="0.3s" data-wow-offset="200"
+                        class="instruction__arrows wow animate__animated animate__bounceInLeft" width="108" height="86"
+                        viewBox="0 0 108 86" fill="none">
+                        <path
+                            d="M46.5249 68.4053C44.5395 70.3245 44.4858 73.4899 46.4051 75.4754C48.3243 77.4608 51.4897 77.5144 53.4751 75.5952L46.5249 68.4053ZM80 43.0002L83.4751 46.5952L87.194 43.0002L83.4751 39.4053L80 43.0002ZM53.4751 10.4053C51.4897 8.48605 48.3243 8.5397 46.4051 10.5251C44.4858 12.5106 44.5395 15.6759 46.5249 17.5952L53.4751 10.4053ZM53.4751 75.5952L83.4751 46.5952L76.5249 39.4053L46.5249 68.4053L53.4751 75.5952ZM83.4751 39.4053L53.4751 10.4053L46.5249 17.5952L76.5249 46.5952L83.4751 39.4053Z"
+                            fill="#0A0A0A" />
+                        <path
+                            d="M24.5249 58.7387C22.5395 60.6579 22.4858 63.8233 24.4051 65.8087C26.3243 67.7942 29.4897 67.8478 31.4751 65.9286L24.5249 58.7387ZM48 43.0003L51.4751 46.5952L55.194 43.0003L51.4751 39.4053L48 43.0003ZM31.4751 20.072C29.4897 18.1528 26.3243 18.2064 24.4051 20.1918C22.4858 22.1773 22.5395 25.3426 24.5249 27.2619L31.4751 20.072ZM31.4751 65.9286L51.4751 46.5952L44.5249 39.4053L24.5249 58.7387L31.4751 65.9286ZM51.4751 39.4053L31.4751 20.072L24.5249 27.2619L44.5249 46.5952L51.4751 39.4053Z"
+                            fill="#f5643e" />
+                    </svg>
+                    <div data-wow-delay="0.2s" data-wow-offset="200"
+                        class="instruction__step wow animate__animated animate__bounceInLeft">
+                        <img class="instruction__step-img" src="img/Step_3.png" alt="Третий шаг">
+                        <p class="instruction__step-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
+                        <p class="instruction__step-number">003</p>
+                    </div>
+                    <svg data-wow-delay="0.1s" data-wow-offset="200"
+                        class="instruction__arrows wow animate__animated animate__bounceInLeft" width="108" height="86"
+                        viewBox="0 0 108 86" fill="none">
+                        <path
+                            d="M46.5249 68.4053C44.5395 70.3245 44.4858 73.4899 46.4051 75.4754C48.3243 77.4608 51.4897 77.5144 53.4751 75.5952L46.5249 68.4053ZM80 43.0002L83.4751 46.5952L87.194 43.0002L83.4751 39.4053L80 43.0002ZM53.4751 10.4053C51.4897 8.48605 48.3243 8.5397 46.4051 10.5251C44.4858 12.5106 44.5395 15.6759 46.5249 17.5952L53.4751 10.4053ZM53.4751 75.5952L83.4751 46.5952L76.5249 39.4053L46.5249 68.4053L53.4751 75.5952ZM83.4751 39.4053L53.4751 10.4053L46.5249 17.5952L76.5249 46.5952L83.4751 39.4053Z"
+                            fill="#0A0A0A" />
+                        <path
+                            d="M24.5249 58.7387C22.5395 60.6579 22.4858 63.8233 24.4051 65.8087C26.3243 67.7942 29.4897 67.8478 31.4751 65.9286L24.5249 58.7387ZM48 43.0003L51.4751 46.5952L55.194 43.0003L51.4751 39.4053L48 43.0003ZM31.4751 20.072C29.4897 18.1528 26.3243 18.2064 24.4051 20.1918C22.4858 22.1773 22.5395 25.3426 24.5249 27.2619L31.4751 20.072ZM31.4751 65.9286L51.4751 46.5952L44.5249 39.4053L24.5249 58.7387L31.4751 65.9286ZM51.4751 39.4053L31.4751 20.072L24.5249 27.2619L44.5249 46.5952L51.4751 39.4053Z"
+                            fill="#f5643e" />
+                    </svg>
+                    <div data-wow-offset="200" class="instruction__step wow animate__animated animate__bounceInLeft">
+                        <img class="instruction__step-img" src="img/Step_4.png" alt="Четвертый шаг">
+                        <p class="instruction__step-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                        </p>
+                        <p class="instruction__step-number">004</p>
+                    </div>
+                </div>
+            </div>
+            <div id="storage" data-item-nav-page class="storage">
+                <p class="section-header">ХРАНЕНИЕ</p>
+                <div class="storage__options">
+                    <div class="storage__option">
+                        <p class="storage__option-name">5 футов</p>
+                        <div class="storage__option-price">
+                            <p>1500 ₴ / месяц</p>
+                        </div>
+                        <div class="storage__option-boxes-wrp">
+                            <img class="storage__option-boxes" src="img/Boxes_1.png" alt="Коробки">
+                        </div>
+                        <p class="storage__option-description">Lorem ipsum</p>
+                        <div class="storage__option-stats">
+                            <div class="storage__option-stats-parameters">
+                                <div class="storage__option-stats-parameter">
+                                    <svg class="storage__option-stats-parameter-svg" width="14" height="14"
+                                        viewBox="0 0 14 14" fill="none">
+                                        <path
+                                            d="M11.063 11.1823H10.9213C8.6084 11.1823 6.29552 11.1823 3.98264 11.1823C3.54685 11.1823 3.20244 11.0194 2.97078 10.6431C2.85217 10.4507 2.82025 10.2364 2.82025 10.0132C2.82025 7.69997 2.82025 5.38651 2.82025 3.07286V2.93493L2.7851 2.9115C2.67733 3.02864 2.57424 3.14871 2.4609 3.25882C2.30509 3.40934 2.06962 3.35223 2.01193 3.15544C1.99767 3.11158 1.99616 3.06458 2.00757 3.01989C2.01897 2.97521 2.04283 2.93468 2.07636 2.90301C2.34873 2.62745 2.62109 2.35217 2.89844 2.08305C3.01061 1.97118 3.16027 1.97382 3.27273 2.08393C3.54607 2.35217 3.81737 2.62344 4.08661 2.89774C4.11224 2.92153 4.13272 2.95033 4.14677 2.98235C4.16083 3.01437 4.16817 3.04893 4.16833 3.0839C4.1685 3.11887 4.16149 3.1535 4.14773 3.18565C4.13398 3.2178 4.11377 3.24679 4.08837 3.27082C4.0374 3.31931 3.96938 3.34576 3.89905 3.34445C3.82871 3.34313 3.76173 3.31415 3.71262 3.26379C3.59752 3.15251 3.48945 3.03391 3.37816 2.91853L3.34565 2.93054V3.0304C3.34565 5.36553 3.34565 7.70056 3.34565 10.0355C3.34565 10.4276 3.57292 10.6554 3.96536 10.6554C6.30011 10.6554 8.63496 10.6554 10.9699 10.6554C11.0018 10.6554 11.0337 10.6528 11.0961 10.6499C10.972 10.5257 10.8618 10.4218 10.7608 10.3116C10.7171 10.2685 10.684 10.2157 10.6641 10.1576C10.6486 10.1081 10.6496 10.0549 10.667 10.0061C10.6845 9.95725 10.7174 9.91544 10.7608 9.88702C10.8039 9.85563 10.8556 9.83817 10.909 9.83696C10.9623 9.83576 11.0147 9.85087 11.0592 9.88029C11.0919 9.90359 11.1222 9.93008 11.1497 9.95935C11.3981 10.2069 11.6461 10.4549 11.8939 10.7035C12.0333 10.8443 12.0354 10.9866 11.8986 11.1249C11.6418 11.3847 11.3835 11.6431 11.1237 11.9C10.9954 12.0274 10.8364 12.033 10.7262 11.9188C10.622 11.8107 10.6313 11.6511 10.7526 11.5287C10.8595 11.4206 10.9696 11.3155 11.0783 11.2092L11.063 11.1823Z"
+                                            fill="black" />
+                                        <path
+                                            d="M11.9978 6.02502V8.96223C11.9995 9.00237 11.9985 9.04258 11.9949 9.08259C11.9847 9.14472 11.9526 9.20113 11.9043 9.24161C11.8561 9.2821 11.795 9.30398 11.732 9.30331C11.6691 9.30264 11.6084 9.27945 11.5611 9.23795C11.5137 9.19644 11.4828 9.13936 11.4739 9.07703C11.471 9.03698 11.4703 8.9968 11.4719 8.95667C11.4719 7.02781 11.4719 5.09886 11.4719 3.1698C11.4716 2.74577 11.254 2.5276 10.8328 2.5276H5.05745C5.02436 2.5276 4.99155 2.5276 4.95875 2.5276C4.79592 2.52145 4.68463 2.41046 4.68756 2.25906C4.69049 2.11264 4.80031 2.00458 4.95846 2.00253C5.16669 1.99931 5.37492 2.00253 5.58315 2.00253C7.34778 2.00253 9.11222 2.00253 10.8765 2.00253C11.4139 2.00253 11.8412 2.32466 11.9633 2.82835C11.9869 2.93514 11.998 3.04433 11.9964 3.1537C11.999 4.11071 11.9978 5.06772 11.9978 6.02502Z"
+                                            fill="black" />
+                                        <path
+                                            d="M5.47843 5.09209C5.93267 4.8871 6.33537 4.96031 6.69794 5.30089C6.85082 5.15241 7.02361 5.04494 7.2333 4.99926C7.83895 4.86689 8.43758 5.32519 8.44402 5.94514C8.4531 6.79643 8.44753 7.64802 8.44636 8.49932C8.44636 8.66682 8.34064 8.7781 8.18922 8.78045C8.03254 8.78279 7.92184 8.67034 7.92154 8.49844C7.92008 7.6653 7.92154 6.83216 7.92154 5.99902C7.92154 5.69681 7.69691 5.48772 7.40112 5.50675C7.14456 5.52315 6.96181 5.73224 6.96006 6.01454C6.95888 6.77476 6.95888 7.53489 6.96006 8.29491C6.96006 8.37164 6.96211 8.44836 6.96006 8.52509C6.95361 8.67151 6.8514 8.77517 6.712 8.78045C6.6455 8.78428 6.58007 8.7624 6.52926 8.71934C6.47845 8.67627 6.44615 8.61532 6.43904 8.5491C6.43499 8.50912 6.43371 8.4689 6.43523 8.42874C6.43523 7.61757 6.43699 6.80639 6.43523 5.99492C6.43523 5.63795 6.09287 5.40455 5.77423 5.54102C5.56659 5.62887 5.47521 5.79872 5.47521 6.02069V7.77482C5.47521 8.01232 5.47521 8.24981 5.47521 8.48731C5.47345 8.66799 5.37564 8.7781 5.22012 8.78015C5.06461 8.7822 4.95068 8.66946 4.95039 8.48731C4.94883 7.37646 4.94883 6.26561 4.95039 5.15476C4.95039 4.98403 5.03825 4.87392 5.17883 4.85401C5.3194 4.83409 5.41898 4.9158 5.47843 5.09209Z"
+                                            fill="black" />
+                                        <path
+                                            d="M9.76142 5.67569C9.89614 5.67569 10.0317 5.6669 10.1656 5.67832C10.2246 5.68381 10.2798 5.71013 10.3212 5.75257C10.3626 5.79501 10.3876 5.8508 10.3917 5.90996C10.397 5.96504 10.3845 6.02037 10.3561 6.06782C10.3276 6.11527 10.2846 6.15232 10.2335 6.17352C10.1961 6.18771 10.1564 6.19495 10.1164 6.1949C9.83874 6.19665 9.55993 6.1949 9.28346 6.1949C9.13703 6.1949 9.02896 6.12959 8.97214 5.99547C8.91532 5.86135 8.94285 5.73718 9.04067 5.63088C9.28668 5.36576 9.53328 5.10113 9.78046 4.83698C9.88531 4.72424 9.90727 4.6276 9.8525 4.52276C9.82722 4.47579 9.78777 4.43798 9.73977 4.4147C9.69178 4.39141 9.63766 4.38383 9.58512 4.39303C9.47178 4.41324 9.40207 4.49817 9.38011 4.64312C9.3558 4.80096 9.26501 4.89292 9.12824 4.8979C9.00436 4.90258 8.88604 4.82556 8.867 4.70901C8.85478 4.62978 8.85726 4.54897 8.87432 4.47064C8.90023 4.35458 8.95247 4.24603 9.02702 4.15338C9.10156 4.06073 9.19641 3.98645 9.30424 3.93629C9.41206 3.88613 9.52997 3.86142 9.64887 3.86409C9.76776 3.86675 9.88445 3.89671 9.98992 3.95164C10.0954 4.00658 10.1868 4.08503 10.2571 4.18092C10.3275 4.27682 10.3748 4.3876 10.3955 4.5047C10.4162 4.6218 10.4097 4.74209 10.3764 4.85627C10.3432 4.97045 10.2842 5.07547 10.2039 5.16321C10.0555 5.3275 9.90112 5.48534 9.74941 5.64787L9.76142 5.67569Z"
+                                            fill="black" />
+                                    </svg>
+                                    <p class="storage__option-stats-parameter-text">Площадь</p>
+                                </div>
+                                <div class="storage__option-stats-parameter">
+                                    <svg width="14" height="16" viewBox="0 0 14 16" fill="none">
+                                        <path d="M12 11.0002L7 14.0002L2 11.0002V5.00024L7 2.00024L12 5.00024V11.0002Z"
+                                            stroke="black" stroke-width="0.6" stroke-miterlimit="10" />
+                                        <path d="M12 5.00533L7 7.50648L2 4.99805" stroke="black" stroke-width="0.6"
+                                            stroke-miterlimit="10" />
+                                        <path d="M7 14.0003V7.50659" stroke="black" stroke-width="0.6"
+                                            stroke-miterlimit="10" />
+                                    </svg>
+                                    <p class="storage__option-stats-parameter-text">Объем</p>
+                                </div>
+                                <div class="storage__option-stats-parameter">
+                                    <svg width="14" height="8" viewBox="0 0 14 8" fill="none">
+                                        <path
+                                            d="M1.78787 3.78811C1.67071 3.90527 1.67071 4.09522 1.78787 4.21238L3.69706 6.12156C3.81421 6.23872 4.00416 6.23872 4.12132 6.12156C4.23848 6.00441 4.23848 5.81446 4.12132 5.6973L2.42426 4.00024L4.12132 2.30319C4.23848 2.18603 4.23848 1.99608 4.12132 1.87892C4.00416 1.76177 3.81421 1.76177 3.69706 1.87892L1.78787 3.78811ZM7 3.70024L2 3.70024L2 4.30024L7 4.30024L7 3.70024Z"
+                                            fill="black" />
+                                        <path
+                                            d="M12.2121 4.21238C12.3293 4.09522 12.3293 3.90527 12.2121 3.78811L10.3029 1.87892C10.1858 1.76177 9.99584 1.76177 9.87868 1.87892C9.76152 1.99608 9.76152 2.18603 9.87868 2.30319L11.5757 4.00024L9.87868 5.6973C9.76152 5.81446 9.76152 6.00441 9.87868 6.12156C9.99584 6.23872 10.1858 6.23872 10.3029 6.12156L12.2121 4.21238ZM7 4.30024L12 4.30024L12 3.70024L7 3.70024L7 4.30024Z"
+                                            fill="black" />
+                                    </svg>
+                                    <p class="storage__option-stats-parameter-text">Ширина</p>
+                                </div>
+                                <div class="storage__option-stats-parameter">
+                                    <svg width="12" height="14" viewBox="0 0 12 14" fill="none">
+                                        <path
+                                            d="M6.21213 1.78811C6.09498 1.67095 5.90503 1.67095 5.78787 1.78811L3.87868 3.6973C3.76152 3.81446 3.76152 4.00441 3.87868 4.12156C3.99584 4.23872 4.18579 4.23872 4.30294 4.12156L6 2.42451L7.69706 4.12156C7.81421 4.23872 8.00416 4.23872 8.12132 4.12156C8.23848 4.00441 8.23848 3.81446 8.12132 3.6973L6.21213 1.78811ZM6.3 7.00024L6.3 2.00024L5.7 2.00024L5.7 7.00024L6.3 7.00024Z"
+                                            fill="black" />
+                                        <path
+                                            d="M5.78787 12.2124C5.90502 12.3295 6.09497 12.3295 6.21213 12.2124L8.12132 10.3032C8.23848 10.186 8.23848 9.99608 8.12132 9.87892C8.00416 9.76177 7.81421 9.76177 7.69706 9.87892L6 11.576L4.30294 9.87892C4.18579 9.76177 3.99584 9.76177 3.87868 9.87892C3.76152 9.99608 3.76152 10.186 3.87868 10.3032L5.78787 12.2124ZM5.7 7.00024L5.7 12.0002L6.3 12.0002L6.3 7.00024L5.7 7.00024Z"
+                                            fill="black" />
+                                    </svg>
+                                    <p class="storage__option-stats-parameter-text">Высота</p>
+                                </div>
+                            </div>
+                            <div class="storage__option-stats-values">
+                                <p class="storage__option-stats-value">0.0 м2</p>
+                                <p class="storage__option-stats-value">0 м2</p>
+                                <p class="storage__option-stats-value">000 см</p>
+                                <p class="storage__option-stats-value">000 см</p>
+                            </div>
+                        </div>
+                        <button data-btn-book class="storage__option-btn">Забронировать</button>
+                    </div>
+                    <div class="storage__option">
+                        <p class="storage__option-name">10 футов</p>
+                        <div class="storage__option-price">
+                            <p>2500 ₴ / месяц</p>
+                        </div>
+                        <div class="storage__option-boxes-wrp">
+                            <img class="storage__option-boxes" src="img/Boxes_2.png" alt="Коробки">
+                        </div>
+                        <p class="storage__option-description">Lorem ipsum</p>
+                        <div class="storage__option-stats">
+                            <div class="storage__option-stats-parameters">
+                                <div class="storage__option-stats-parameter">
+                                    <svg class="storage__option-stats-parameter-svg" width="14" height="14"
+                                        viewBox="0 0 14 14" fill="none">
+                                        <path
+                                            d="M11.063 11.1823H10.9213C8.6084 11.1823 6.29552 11.1823 3.98264 11.1823C3.54685 11.1823 3.20244 11.0194 2.97078 10.6431C2.85217 10.4507 2.82025 10.2364 2.82025 10.0132C2.82025 7.69997 2.82025 5.38651 2.82025 3.07286V2.93493L2.7851 2.9115C2.67733 3.02864 2.57424 3.14871 2.4609 3.25882C2.30509 3.40934 2.06962 3.35223 2.01193 3.15544C1.99767 3.11158 1.99616 3.06458 2.00757 3.01989C2.01897 2.97521 2.04283 2.93468 2.07636 2.90301C2.34873 2.62745 2.62109 2.35217 2.89844 2.08305C3.01061 1.97118 3.16027 1.97382 3.27273 2.08393C3.54607 2.35217 3.81737 2.62344 4.08661 2.89774C4.11224 2.92153 4.13272 2.95033 4.14677 2.98235C4.16083 3.01437 4.16817 3.04893 4.16833 3.0839C4.1685 3.11887 4.16149 3.1535 4.14773 3.18565C4.13398 3.2178 4.11377 3.24679 4.08837 3.27082C4.0374 3.31931 3.96938 3.34576 3.89905 3.34445C3.82871 3.34313 3.76173 3.31415 3.71262 3.26379C3.59752 3.15251 3.48945 3.03391 3.37816 2.91853L3.34565 2.93054V3.0304C3.34565 5.36553 3.34565 7.70056 3.34565 10.0355C3.34565 10.4276 3.57292 10.6554 3.96536 10.6554C6.30011 10.6554 8.63496 10.6554 10.9699 10.6554C11.0018 10.6554 11.0337 10.6528 11.0961 10.6499C10.972 10.5257 10.8618 10.4218 10.7608 10.3116C10.7171 10.2685 10.684 10.2157 10.6641 10.1576C10.6486 10.1081 10.6496 10.0549 10.667 10.0061C10.6845 9.95725 10.7174 9.91544 10.7608 9.88702C10.8039 9.85563 10.8556 9.83817 10.909 9.83696C10.9623 9.83576 11.0147 9.85087 11.0592 9.88029C11.0919 9.90359 11.1222 9.93008 11.1497 9.95935C11.3981 10.2069 11.6461 10.4549 11.8939 10.7035C12.0333 10.8443 12.0354 10.9866 11.8986 11.1249C11.6418 11.3847 11.3835 11.6431 11.1237 11.9C10.9954 12.0274 10.8364 12.033 10.7262 11.9188C10.622 11.8107 10.6313 11.6511 10.7526 11.5287C10.8595 11.4206 10.9696 11.3155 11.0783 11.2092L11.063 11.1823Z"
+                                            fill="black" />
+                                        <path
+                                            d="M11.9978 6.02502V8.96223C11.9995 9.00237 11.9985 9.04258 11.9949 9.08259C11.9847 9.14472 11.9526 9.20113 11.9043 9.24161C11.8561 9.2821 11.795 9.30398 11.732 9.30331C11.6691 9.30264 11.6084 9.27945 11.5611 9.23795C11.5137 9.19644 11.4828 9.13936 11.4739 9.07703C11.471 9.03698 11.4703 8.9968 11.4719 8.95667C11.4719 7.02781 11.4719 5.09886 11.4719 3.1698C11.4716 2.74577 11.254 2.5276 10.8328 2.5276H5.05745C5.02436 2.5276 4.99155 2.5276 4.95875 2.5276C4.79592 2.52145 4.68463 2.41046 4.68756 2.25906C4.69049 2.11264 4.80031 2.00458 4.95846 2.00253C5.16669 1.99931 5.37492 2.00253 5.58315 2.00253C7.34778 2.00253 9.11222 2.00253 10.8765 2.00253C11.4139 2.00253 11.8412 2.32466 11.9633 2.82835C11.9869 2.93514 11.998 3.04433 11.9964 3.1537C11.999 4.11071 11.9978 5.06772 11.9978 6.02502Z"
+                                            fill="black" />
+                                        <path
+                                            d="M5.47843 5.09209C5.93267 4.8871 6.33537 4.96031 6.69794 5.30089C6.85082 5.15241 7.02361 5.04494 7.2333 4.99926C7.83895 4.86689 8.43758 5.32519 8.44402 5.94514C8.4531 6.79643 8.44753 7.64802 8.44636 8.49932C8.44636 8.66682 8.34064 8.7781 8.18922 8.78045C8.03254 8.78279 7.92184 8.67034 7.92154 8.49844C7.92008 7.6653 7.92154 6.83216 7.92154 5.99902C7.92154 5.69681 7.69691 5.48772 7.40112 5.50675C7.14456 5.52315 6.96181 5.73224 6.96006 6.01454C6.95888 6.77476 6.95888 7.53489 6.96006 8.29491C6.96006 8.37164 6.96211 8.44836 6.96006 8.52509C6.95361 8.67151 6.8514 8.77517 6.712 8.78045C6.6455 8.78428 6.58007 8.7624 6.52926 8.71934C6.47845 8.67627 6.44615 8.61532 6.43904 8.5491C6.43499 8.50912 6.43371 8.4689 6.43523 8.42874C6.43523 7.61757 6.43699 6.80639 6.43523 5.99492C6.43523 5.63795 6.09287 5.40455 5.77423 5.54102C5.56659 5.62887 5.47521 5.79872 5.47521 6.02069V7.77482C5.47521 8.01232 5.47521 8.24981 5.47521 8.48731C5.47345 8.66799 5.37564 8.7781 5.22012 8.78015C5.06461 8.7822 4.95068 8.66946 4.95039 8.48731C4.94883 7.37646 4.94883 6.26561 4.95039 5.15476C4.95039 4.98403 5.03825 4.87392 5.17883 4.85401C5.3194 4.83409 5.41898 4.9158 5.47843 5.09209Z"
+                                            fill="black" />
+                                        <path
+                                            d="M9.76142 5.67569C9.89614 5.67569 10.0317 5.6669 10.1656 5.67832C10.2246 5.68381 10.2798 5.71013 10.3212 5.75257C10.3626 5.79501 10.3876 5.8508 10.3917 5.90996C10.397 5.96504 10.3845 6.02037 10.3561 6.06782C10.3276 6.11527 10.2846 6.15232 10.2335 6.17352C10.1961 6.18771 10.1564 6.19495 10.1164 6.1949C9.83874 6.19665 9.55993 6.1949 9.28346 6.1949C9.13703 6.1949 9.02896 6.12959 8.97214 5.99547C8.91532 5.86135 8.94285 5.73718 9.04067 5.63088C9.28668 5.36576 9.53328 5.10113 9.78046 4.83698C9.88531 4.72424 9.90727 4.6276 9.8525 4.52276C9.82722 4.47579 9.78777 4.43798 9.73977 4.4147C9.69178 4.39141 9.63766 4.38383 9.58512 4.39303C9.47178 4.41324 9.40207 4.49817 9.38011 4.64312C9.3558 4.80096 9.26501 4.89292 9.12824 4.8979C9.00436 4.90258 8.88604 4.82556 8.867 4.70901C8.85478 4.62978 8.85726 4.54897 8.87432 4.47064C8.90023 4.35458 8.95247 4.24603 9.02702 4.15338C9.10156 4.06073 9.19641 3.98645 9.30424 3.93629C9.41206 3.88613 9.52997 3.86142 9.64887 3.86409C9.76776 3.86675 9.88445 3.89671 9.98992 3.95164C10.0954 4.00658 10.1868 4.08503 10.2571 4.18092C10.3275 4.27682 10.3748 4.3876 10.3955 4.5047C10.4162 4.6218 10.4097 4.74209 10.3764 4.85627C10.3432 4.97045 10.2842 5.07547 10.2039 5.16321C10.0555 5.3275 9.90112 5.48534 9.74941 5.64787L9.76142 5.67569Z"
+                                            fill="black" />
+                                    </svg>
+                                    <p class="storage__option-stats-parameter-text">Площадь</p>
+                                </div>
+                                <div class="storage__option-stats-parameter">
+                                    <svg width="14" height="16" viewBox="0 0 14 16" fill="none">
+                                        <path d="M12 11.0002L7 14.0002L2 11.0002V5.00024L7 2.00024L12 5.00024V11.0002Z"
+                                            stroke="black" stroke-width="0.6" stroke-miterlimit="10" />
+                                        <path d="M12 5.00533L7 7.50648L2 4.99805" stroke="black" stroke-width="0.6"
+                                            stroke-miterlimit="10" />
+                                        <path d="M7 14.0003V7.50659" stroke="black" stroke-width="0.6"
+                                            stroke-miterlimit="10" />
+                                    </svg>
+                                    <p class="storage__option-stats-parameter-text">Объем</p>
+                                </div>
+                                <div class="storage__option-stats-parameter">
+                                    <svg width="14" height="8" viewBox="0 0 14 8" fill="none">
+                                        <path
+                                            d="M1.78787 3.78811C1.67071 3.90527 1.67071 4.09522 1.78787 4.21238L3.69706 6.12156C3.81421 6.23872 4.00416 6.23872 4.12132 6.12156C4.23848 6.00441 4.23848 5.81446 4.12132 5.6973L2.42426 4.00024L4.12132 2.30319C4.23848 2.18603 4.23848 1.99608 4.12132 1.87892C4.00416 1.76177 3.81421 1.76177 3.69706 1.87892L1.78787 3.78811ZM7 3.70024L2 3.70024L2 4.30024L7 4.30024L7 3.70024Z"
+                                            fill="black" />
+                                        <path
+                                            d="M12.2121 4.21238C12.3293 4.09522 12.3293 3.90527 12.2121 3.78811L10.3029 1.87892C10.1858 1.76177 9.99584 1.76177 9.87868 1.87892C9.76152 1.99608 9.76152 2.18603 9.87868 2.30319L11.5757 4.00024L9.87868 5.6973C9.76152 5.81446 9.76152 6.00441 9.87868 6.12156C9.99584 6.23872 10.1858 6.23872 10.3029 6.12156L12.2121 4.21238ZM7 4.30024L12 4.30024L12 3.70024L7 3.70024L7 4.30024Z"
+                                            fill="black" />
+                                    </svg>
+                                    <p class="storage__option-stats-parameter-text">Ширина</p>
+                                </div>
+                                <div class="storage__option-stats-parameter">
+                                    <svg width="12" height="14" viewBox="0 0 12 14" fill="none">
+                                        <path
+                                            d="M6.21213 1.78811C6.09498 1.67095 5.90503 1.67095 5.78787 1.78811L3.87868 3.6973C3.76152 3.81446 3.76152 4.00441 3.87868 4.12156C3.99584 4.23872 4.18579 4.23872 4.30294 4.12156L6 2.42451L7.69706 4.12156C7.81421 4.23872 8.00416 4.23872 8.12132 4.12156C8.23848 4.00441 8.23848 3.81446 8.12132 3.6973L6.21213 1.78811ZM6.3 7.00024L6.3 2.00024L5.7 2.00024L5.7 7.00024L6.3 7.00024Z"
+                                            fill="black" />
+                                        <path
+                                            d="M5.78787 12.2124C5.90502 12.3295 6.09497 12.3295 6.21213 12.2124L8.12132 10.3032C8.23848 10.186 8.23848 9.99608 8.12132 9.87892C8.00416 9.76177 7.81421 9.76177 7.69706 9.87892L6 11.576L4.30294 9.87892C4.18579 9.76177 3.99584 9.76177 3.87868 9.87892C3.76152 9.99608 3.76152 10.186 3.87868 10.3032L5.78787 12.2124ZM5.7 7.00024L5.7 12.0002L6.3 12.0002L6.3 7.00024L5.7 7.00024Z"
+                                            fill="black" />
+                                    </svg>
+                                    <p class="storage__option-stats-parameter-text">Высота</p>
+                                </div>
+                            </div>
+                            <div class="storage__option-stats-values">
+                                <p class="storage__option-stats-value">0.0 м2</p>
+                                <p class="storage__option-stats-value">0 м2</p>
+                                <p class="storage__option-stats-value">000 см</p>
+                                <p class="storage__option-stats-value">000 см</p>
+                            </div>
+                        </div>
+                        <button data-btn-book class="storage__option-btn">Забронировать</button>
+                    </div>
+                    <div class="storage__option">
+                        <p class="storage__option-name">20 футов</p>
+                        <div class="storage__option-price">
+                            <p>3500 ₴ / месяц</p>
+                        </div>
+                        <div class="storage__option-boxes-wrp">
+                            <img class="storage__option-boxes" src="img/Boxes_3.png" alt="Коробки">
+                        </div>
+                        <p class="storage__option-description">Lorem ipsum</p>
+                        <div class="storage__option-stats">
+                            <div class="storage__option-stats-parameters">
+                                <div class="storage__option-stats-parameter">
+                                    <svg class="storage__option-stats-parameter-svg" width="14" height="14"
+                                        viewBox="0 0 14 14" fill="none">
+                                        <path
+                                            d="M11.063 11.1823H10.9213C8.6084 11.1823 6.29552 11.1823 3.98264 11.1823C3.54685 11.1823 3.20244 11.0194 2.97078 10.6431C2.85217 10.4507 2.82025 10.2364 2.82025 10.0132C2.82025 7.69997 2.82025 5.38651 2.82025 3.07286V2.93493L2.7851 2.9115C2.67733 3.02864 2.57424 3.14871 2.4609 3.25882C2.30509 3.40934 2.06962 3.35223 2.01193 3.15544C1.99767 3.11158 1.99616 3.06458 2.00757 3.01989C2.01897 2.97521 2.04283 2.93468 2.07636 2.90301C2.34873 2.62745 2.62109 2.35217 2.89844 2.08305C3.01061 1.97118 3.16027 1.97382 3.27273 2.08393C3.54607 2.35217 3.81737 2.62344 4.08661 2.89774C4.11224 2.92153 4.13272 2.95033 4.14677 2.98235C4.16083 3.01437 4.16817 3.04893 4.16833 3.0839C4.1685 3.11887 4.16149 3.1535 4.14773 3.18565C4.13398 3.2178 4.11377 3.24679 4.08837 3.27082C4.0374 3.31931 3.96938 3.34576 3.89905 3.34445C3.82871 3.34313 3.76173 3.31415 3.71262 3.26379C3.59752 3.15251 3.48945 3.03391 3.37816 2.91853L3.34565 2.93054V3.0304C3.34565 5.36553 3.34565 7.70056 3.34565 10.0355C3.34565 10.4276 3.57292 10.6554 3.96536 10.6554C6.30011 10.6554 8.63496 10.6554 10.9699 10.6554C11.0018 10.6554 11.0337 10.6528 11.0961 10.6499C10.972 10.5257 10.8618 10.4218 10.7608 10.3116C10.7171 10.2685 10.684 10.2157 10.6641 10.1576C10.6486 10.1081 10.6496 10.0549 10.667 10.0061C10.6845 9.95725 10.7174 9.91544 10.7608 9.88702C10.8039 9.85563 10.8556 9.83817 10.909 9.83696C10.9623 9.83576 11.0147 9.85087 11.0592 9.88029C11.0919 9.90359 11.1222 9.93008 11.1497 9.95935C11.3981 10.2069 11.6461 10.4549 11.8939 10.7035C12.0333 10.8443 12.0354 10.9866 11.8986 11.1249C11.6418 11.3847 11.3835 11.6431 11.1237 11.9C10.9954 12.0274 10.8364 12.033 10.7262 11.9188C10.622 11.8107 10.6313 11.6511 10.7526 11.5287C10.8595 11.4206 10.9696 11.3155 11.0783 11.2092L11.063 11.1823Z"
+                                            fill="black" />
+                                        <path
+                                            d="M11.9978 6.02502V8.96223C11.9995 9.00237 11.9985 9.04258 11.9949 9.08259C11.9847 9.14472 11.9526 9.20113 11.9043 9.24161C11.8561 9.2821 11.795 9.30398 11.732 9.30331C11.6691 9.30264 11.6084 9.27945 11.5611 9.23795C11.5137 9.19644 11.4828 9.13936 11.4739 9.07703C11.471 9.03698 11.4703 8.9968 11.4719 8.95667C11.4719 7.02781 11.4719 5.09886 11.4719 3.1698C11.4716 2.74577 11.254 2.5276 10.8328 2.5276H5.05745C5.02436 2.5276 4.99155 2.5276 4.95875 2.5276C4.79592 2.52145 4.68463 2.41046 4.68756 2.25906C4.69049 2.11264 4.80031 2.00458 4.95846 2.00253C5.16669 1.99931 5.37492 2.00253 5.58315 2.00253C7.34778 2.00253 9.11222 2.00253 10.8765 2.00253C11.4139 2.00253 11.8412 2.32466 11.9633 2.82835C11.9869 2.93514 11.998 3.04433 11.9964 3.1537C11.999 4.11071 11.9978 5.06772 11.9978 6.02502Z"
+                                            fill="black" />
+                                        <path
+                                            d="M5.47843 5.09209C5.93267 4.8871 6.33537 4.96031 6.69794 5.30089C6.85082 5.15241 7.02361 5.04494 7.2333 4.99926C7.83895 4.86689 8.43758 5.32519 8.44402 5.94514C8.4531 6.79643 8.44753 7.64802 8.44636 8.49932C8.44636 8.66682 8.34064 8.7781 8.18922 8.78045C8.03254 8.78279 7.92184 8.67034 7.92154 8.49844C7.92008 7.6653 7.92154 6.83216 7.92154 5.99902C7.92154 5.69681 7.69691 5.48772 7.40112 5.50675C7.14456 5.52315 6.96181 5.73224 6.96006 6.01454C6.95888 6.77476 6.95888 7.53489 6.96006 8.29491C6.96006 8.37164 6.96211 8.44836 6.96006 8.52509C6.95361 8.67151 6.8514 8.77517 6.712 8.78045C6.6455 8.78428 6.58007 8.7624 6.52926 8.71934C6.47845 8.67627 6.44615 8.61532 6.43904 8.5491C6.43499 8.50912 6.43371 8.4689 6.43523 8.42874C6.43523 7.61757 6.43699 6.80639 6.43523 5.99492C6.43523 5.63795 6.09287 5.40455 5.77423 5.54102C5.56659 5.62887 5.47521 5.79872 5.47521 6.02069V7.77482C5.47521 8.01232 5.47521 8.24981 5.47521 8.48731C5.47345 8.66799 5.37564 8.7781 5.22012 8.78015C5.06461 8.7822 4.95068 8.66946 4.95039 8.48731C4.94883 7.37646 4.94883 6.26561 4.95039 5.15476C4.95039 4.98403 5.03825 4.87392 5.17883 4.85401C5.3194 4.83409 5.41898 4.9158 5.47843 5.09209Z"
+                                            fill="black" />
+                                        <path
+                                            d="M9.76142 5.67569C9.89614 5.67569 10.0317 5.6669 10.1656 5.67832C10.2246 5.68381 10.2798 5.71013 10.3212 5.75257C10.3626 5.79501 10.3876 5.8508 10.3917 5.90996C10.397 5.96504 10.3845 6.02037 10.3561 6.06782C10.3276 6.11527 10.2846 6.15232 10.2335 6.17352C10.1961 6.18771 10.1564 6.19495 10.1164 6.1949C9.83874 6.19665 9.55993 6.1949 9.28346 6.1949C9.13703 6.1949 9.02896 6.12959 8.97214 5.99547C8.91532 5.86135 8.94285 5.73718 9.04067 5.63088C9.28668 5.36576 9.53328 5.10113 9.78046 4.83698C9.88531 4.72424 9.90727 4.6276 9.8525 4.52276C9.82722 4.47579 9.78777 4.43798 9.73977 4.4147C9.69178 4.39141 9.63766 4.38383 9.58512 4.39303C9.47178 4.41324 9.40207 4.49817 9.38011 4.64312C9.3558 4.80096 9.26501 4.89292 9.12824 4.8979C9.00436 4.90258 8.88604 4.82556 8.867 4.70901C8.85478 4.62978 8.85726 4.54897 8.87432 4.47064C8.90023 4.35458 8.95247 4.24603 9.02702 4.15338C9.10156 4.06073 9.19641 3.98645 9.30424 3.93629C9.41206 3.88613 9.52997 3.86142 9.64887 3.86409C9.76776 3.86675 9.88445 3.89671 9.98992 3.95164C10.0954 4.00658 10.1868 4.08503 10.2571 4.18092C10.3275 4.27682 10.3748 4.3876 10.3955 4.5047C10.4162 4.6218 10.4097 4.74209 10.3764 4.85627C10.3432 4.97045 10.2842 5.07547 10.2039 5.16321C10.0555 5.3275 9.90112 5.48534 9.74941 5.64787L9.76142 5.67569Z"
+                                            fill="black" />
+                                    </svg>
+                                    <p class="storage__option-stats-parameter-text">Площадь</p>
+                                </div>
+                                <div class="storage__option-stats-parameter">
+                                    <svg width="14" height="16" viewBox="0 0 14 16" fill="none">
+                                        <path d="M12 11.0002L7 14.0002L2 11.0002V5.00024L7 2.00024L12 5.00024V11.0002Z"
+                                            stroke="black" stroke-width="0.6" stroke-miterlimit="10" />
+                                        <path d="M12 5.00533L7 7.50648L2 4.99805" stroke="black" stroke-width="0.6"
+                                            stroke-miterlimit="10" />
+                                        <path d="M7 14.0003V7.50659" stroke="black" stroke-width="0.6"
+                                            stroke-miterlimit="10" />
+                                    </svg>
+                                    <p class="storage__option-stats-parameter-text">Объем</p>
+                                </div>
+                                <div class="storage__option-stats-parameter">
+                                    <svg width="14" height="8" viewBox="0 0 14 8" fill="none">
+                                        <path
+                                            d="M1.78787 3.78811C1.67071 3.90527 1.67071 4.09522 1.78787 4.21238L3.69706 6.12156C3.81421 6.23872 4.00416 6.23872 4.12132 6.12156C4.23848 6.00441 4.23848 5.81446 4.12132 5.6973L2.42426 4.00024L4.12132 2.30319C4.23848 2.18603 4.23848 1.99608 4.12132 1.87892C4.00416 1.76177 3.81421 1.76177 3.69706 1.87892L1.78787 3.78811ZM7 3.70024L2 3.70024L2 4.30024L7 4.30024L7 3.70024Z"
+                                            fill="black" />
+                                        <path
+                                            d="M12.2121 4.21238C12.3293 4.09522 12.3293 3.90527 12.2121 3.78811L10.3029 1.87892C10.1858 1.76177 9.99584 1.76177 9.87868 1.87892C9.76152 1.99608 9.76152 2.18603 9.87868 2.30319L11.5757 4.00024L9.87868 5.6973C9.76152 5.81446 9.76152 6.00441 9.87868 6.12156C9.99584 6.23872 10.1858 6.23872 10.3029 6.12156L12.2121 4.21238ZM7 4.30024L12 4.30024L12 3.70024L7 3.70024L7 4.30024Z"
+                                            fill="black" />
+                                    </svg>
+                                    <p class="storage__option-stats-parameter-text">Ширина</p>
+                                </div>
+                                <div class="storage__option-stats-parameter">
+                                    <svg width="12" height="14" viewBox="0 0 12 14" fill="none">
+                                        <path
+                                            d="M6.21213 1.78811C6.09498 1.67095 5.90503 1.67095 5.78787 1.78811L3.87868 3.6973C3.76152 3.81446 3.76152 4.00441 3.87868 4.12156C3.99584 4.23872 4.18579 4.23872 4.30294 4.12156L6 2.42451L7.69706 4.12156C7.81421 4.23872 8.00416 4.23872 8.12132 4.12156C8.23848 4.00441 8.23848 3.81446 8.12132 3.6973L6.21213 1.78811ZM6.3 7.00024L6.3 2.00024L5.7 2.00024L5.7 7.00024L6.3 7.00024Z"
+                                            fill="black" />
+                                        <path
+                                            d="M5.78787 12.2124C5.90502 12.3295 6.09497 12.3295 6.21213 12.2124L8.12132 10.3032C8.23848 10.186 8.23848 9.99608 8.12132 9.87892C8.00416 9.76177 7.81421 9.76177 7.69706 9.87892L6 11.576L4.30294 9.87892C4.18579 9.76177 3.99584 9.76177 3.87868 9.87892C3.76152 9.99608 3.76152 10.186 3.87868 10.3032L5.78787 12.2124ZM5.7 7.00024L5.7 12.0002L6.3 12.0002L6.3 7.00024L5.7 7.00024Z"
+                                            fill="black" />
+                                    </svg>
+                                    <p class="storage__option-stats-parameter-text">Высота</p>
+                                </div>
+                            </div>
+                            <div class="storage__option-stats-values">
+                                <p class="storage__option-stats-value">0.0 м2</p>
+                                <p class="storage__option-stats-value">0 м2</p>
+                                <p class="storage__option-stats-value">000 см</p>
+                                <p class="storage__option-stats-value">000 см</p>
+                            </div>
+                        </div>
+                        <button data-btn-book class="storage__option-btn">Забронировать</button>
+                    </div>
+                    <div class="storage__option">
+                        <p class="storage__option-name">40 футов</p>
+                        <div class="storage__option-price">
+                            <p>4500 ₴ / месяц</p>
+                        </div>
+                        <div class="storage__option-boxes-wrp">
+                            <img class="storage__option-boxes" src="img/Boxes_4.png" alt="Коробки">
+                        </div>
+                        <p class="storage__option-description">Lorem ipsum</p>
+                        <div class="storage__option-stats">
+                            <div class="storage__option-stats-parameters">
+                                <div class="storage__option-stats-parameter">
+                                    <svg class="storage__option-stats-parameter-svg" width="14" height="14"
+                                        viewBox="0 0 14 14" fill="none">
+                                        <path
+                                            d="M11.063 11.1823H10.9213C8.6084 11.1823 6.29552 11.1823 3.98264 11.1823C3.54685 11.1823 3.20244 11.0194 2.97078 10.6431C2.85217 10.4507 2.82025 10.2364 2.82025 10.0132C2.82025 7.69997 2.82025 5.38651 2.82025 3.07286V2.93493L2.7851 2.9115C2.67733 3.02864 2.57424 3.14871 2.4609 3.25882C2.30509 3.40934 2.06962 3.35223 2.01193 3.15544C1.99767 3.11158 1.99616 3.06458 2.00757 3.01989C2.01897 2.97521 2.04283 2.93468 2.07636 2.90301C2.34873 2.62745 2.62109 2.35217 2.89844 2.08305C3.01061 1.97118 3.16027 1.97382 3.27273 2.08393C3.54607 2.35217 3.81737 2.62344 4.08661 2.89774C4.11224 2.92153 4.13272 2.95033 4.14677 2.98235C4.16083 3.01437 4.16817 3.04893 4.16833 3.0839C4.1685 3.11887 4.16149 3.1535 4.14773 3.18565C4.13398 3.2178 4.11377 3.24679 4.08837 3.27082C4.0374 3.31931 3.96938 3.34576 3.89905 3.34445C3.82871 3.34313 3.76173 3.31415 3.71262 3.26379C3.59752 3.15251 3.48945 3.03391 3.37816 2.91853L3.34565 2.93054V3.0304C3.34565 5.36553 3.34565 7.70056 3.34565 10.0355C3.34565 10.4276 3.57292 10.6554 3.96536 10.6554C6.30011 10.6554 8.63496 10.6554 10.9699 10.6554C11.0018 10.6554 11.0337 10.6528 11.0961 10.6499C10.972 10.5257 10.8618 10.4218 10.7608 10.3116C10.7171 10.2685 10.684 10.2157 10.6641 10.1576C10.6486 10.1081 10.6496 10.0549 10.667 10.0061C10.6845 9.95725 10.7174 9.91544 10.7608 9.88702C10.8039 9.85563 10.8556 9.83817 10.909 9.83696C10.9623 9.83576 11.0147 9.85087 11.0592 9.88029C11.0919 9.90359 11.1222 9.93008 11.1497 9.95935C11.3981 10.2069 11.6461 10.4549 11.8939 10.7035C12.0333 10.8443 12.0354 10.9866 11.8986 11.1249C11.6418 11.3847 11.3835 11.6431 11.1237 11.9C10.9954 12.0274 10.8364 12.033 10.7262 11.9188C10.622 11.8107 10.6313 11.6511 10.7526 11.5287C10.8595 11.4206 10.9696 11.3155 11.0783 11.2092L11.063 11.1823Z"
+                                            fill="black" />
+                                        <path
+                                            d="M11.9978 6.02502V8.96223C11.9995 9.00237 11.9985 9.04258 11.9949 9.08259C11.9847 9.14472 11.9526 9.20113 11.9043 9.24161C11.8561 9.2821 11.795 9.30398 11.732 9.30331C11.6691 9.30264 11.6084 9.27945 11.5611 9.23795C11.5137 9.19644 11.4828 9.13936 11.4739 9.07703C11.471 9.03698 11.4703 8.9968 11.4719 8.95667C11.4719 7.02781 11.4719 5.09886 11.4719 3.1698C11.4716 2.74577 11.254 2.5276 10.8328 2.5276H5.05745C5.02436 2.5276 4.99155 2.5276 4.95875 2.5276C4.79592 2.52145 4.68463 2.41046 4.68756 2.25906C4.69049 2.11264 4.80031 2.00458 4.95846 2.00253C5.16669 1.99931 5.37492 2.00253 5.58315 2.00253C7.34778 2.00253 9.11222 2.00253 10.8765 2.00253C11.4139 2.00253 11.8412 2.32466 11.9633 2.82835C11.9869 2.93514 11.998 3.04433 11.9964 3.1537C11.999 4.11071 11.9978 5.06772 11.9978 6.02502Z"
+                                            fill="black" />
+                                        <path
+                                            d="M5.47843 5.09209C5.93267 4.8871 6.33537 4.96031 6.69794 5.30089C6.85082 5.15241 7.02361 5.04494 7.2333 4.99926C7.83895 4.86689 8.43758 5.32519 8.44402 5.94514C8.4531 6.79643 8.44753 7.64802 8.44636 8.49932C8.44636 8.66682 8.34064 8.7781 8.18922 8.78045C8.03254 8.78279 7.92184 8.67034 7.92154 8.49844C7.92008 7.6653 7.92154 6.83216 7.92154 5.99902C7.92154 5.69681 7.69691 5.48772 7.40112 5.50675C7.14456 5.52315 6.96181 5.73224 6.96006 6.01454C6.95888 6.77476 6.95888 7.53489 6.96006 8.29491C6.96006 8.37164 6.96211 8.44836 6.96006 8.52509C6.95361 8.67151 6.8514 8.77517 6.712 8.78045C6.6455 8.78428 6.58007 8.7624 6.52926 8.71934C6.47845 8.67627 6.44615 8.61532 6.43904 8.5491C6.43499 8.50912 6.43371 8.4689 6.43523 8.42874C6.43523 7.61757 6.43699 6.80639 6.43523 5.99492C6.43523 5.63795 6.09287 5.40455 5.77423 5.54102C5.56659 5.62887 5.47521 5.79872 5.47521 6.02069V7.77482C5.47521 8.01232 5.47521 8.24981 5.47521 8.48731C5.47345 8.66799 5.37564 8.7781 5.22012 8.78015C5.06461 8.7822 4.95068 8.66946 4.95039 8.48731C4.94883 7.37646 4.94883 6.26561 4.95039 5.15476C4.95039 4.98403 5.03825 4.87392 5.17883 4.85401C5.3194 4.83409 5.41898 4.9158 5.47843 5.09209Z"
+                                            fill="black" />
+                                        <path
+                                            d="M9.76142 5.67569C9.89614 5.67569 10.0317 5.6669 10.1656 5.67832C10.2246 5.68381 10.2798 5.71013 10.3212 5.75257C10.3626 5.79501 10.3876 5.8508 10.3917 5.90996C10.397 5.96504 10.3845 6.02037 10.3561 6.06782C10.3276 6.11527 10.2846 6.15232 10.2335 6.17352C10.1961 6.18771 10.1564 6.19495 10.1164 6.1949C9.83874 6.19665 9.55993 6.1949 9.28346 6.1949C9.13703 6.1949 9.02896 6.12959 8.97214 5.99547C8.91532 5.86135 8.94285 5.73718 9.04067 5.63088C9.28668 5.36576 9.53328 5.10113 9.78046 4.83698C9.88531 4.72424 9.90727 4.6276 9.8525 4.52276C9.82722 4.47579 9.78777 4.43798 9.73977 4.4147C9.69178 4.39141 9.63766 4.38383 9.58512 4.39303C9.47178 4.41324 9.40207 4.49817 9.38011 4.64312C9.3558 4.80096 9.26501 4.89292 9.12824 4.8979C9.00436 4.90258 8.88604 4.82556 8.867 4.70901C8.85478 4.62978 8.85726 4.54897 8.87432 4.47064C8.90023 4.35458 8.95247 4.24603 9.02702 4.15338C9.10156 4.06073 9.19641 3.98645 9.30424 3.93629C9.41206 3.88613 9.52997 3.86142 9.64887 3.86409C9.76776 3.86675 9.88445 3.89671 9.98992 3.95164C10.0954 4.00658 10.1868 4.08503 10.2571 4.18092C10.3275 4.27682 10.3748 4.3876 10.3955 4.5047C10.4162 4.6218 10.4097 4.74209 10.3764 4.85627C10.3432 4.97045 10.2842 5.07547 10.2039 5.16321C10.0555 5.3275 9.90112 5.48534 9.74941 5.64787L9.76142 5.67569Z"
+                                            fill="black" />
+                                    </svg>
+                                    <p class="storage__option-stats-parameter-text">Площадь</p>
+                                </div>
+                                <div class="storage__option-stats-parameter">
+                                    <svg width="14" height="16" viewBox="0 0 14 16" fill="none">
+                                        <path d="M12 11.0002L7 14.0002L2 11.0002V5.00024L7 2.00024L12 5.00024V11.0002Z"
+                                            stroke="black" stroke-width="0.6" stroke-miterlimit="10" />
+                                        <path d="M12 5.00533L7 7.50648L2 4.99805" stroke="black" stroke-width="0.6"
+                                            stroke-miterlimit="10" />
+                                        <path d="M7 14.0003V7.50659" stroke="black" stroke-width="0.6"
+                                            stroke-miterlimit="10" />
+                                    </svg>
+                                    <p class="storage__option-stats-parameter-text">Объем</p>
+                                </div>
+                                <div class="storage__option-stats-parameter">
+                                    <svg width="14" height="8" viewBox="0 0 14 8" fill="none">
+                                        <path
+                                            d="M1.78787 3.78811C1.67071 3.90527 1.67071 4.09522 1.78787 4.21238L3.69706 6.12156C3.81421 6.23872 4.00416 6.23872 4.12132 6.12156C4.23848 6.00441 4.23848 5.81446 4.12132 5.6973L2.42426 4.00024L4.12132 2.30319C4.23848 2.18603 4.23848 1.99608 4.12132 1.87892C4.00416 1.76177 3.81421 1.76177 3.69706 1.87892L1.78787 3.78811ZM7 3.70024L2 3.70024L2 4.30024L7 4.30024L7 3.70024Z"
+                                            fill="black" />
+                                        <path
+                                            d="M12.2121 4.21238C12.3293 4.09522 12.3293 3.90527 12.2121 3.78811L10.3029 1.87892C10.1858 1.76177 9.99584 1.76177 9.87868 1.87892C9.76152 1.99608 9.76152 2.18603 9.87868 2.30319L11.5757 4.00024L9.87868 5.6973C9.76152 5.81446 9.76152 6.00441 9.87868 6.12156C9.99584 6.23872 10.1858 6.23872 10.3029 6.12156L12.2121 4.21238ZM7 4.30024L12 4.30024L12 3.70024L7 3.70024L7 4.30024Z"
+                                            fill="black" />
+                                    </svg>
+                                    <p class="storage__option-stats-parameter-text">Ширина</p>
+                                </div>
+                                <div class="storage__option-stats-parameter">
+                                    <svg width="12" height="14" viewBox="0 0 12 14" fill="none">
+                                        <path
+                                            d="M6.21213 1.78811C6.09498 1.67095 5.90503 1.67095 5.78787 1.78811L3.87868 3.6973C3.76152 3.81446 3.76152 4.00441 3.87868 4.12156C3.99584 4.23872 4.18579 4.23872 4.30294 4.12156L6 2.42451L7.69706 4.12156C7.81421 4.23872 8.00416 4.23872 8.12132 4.12156C8.23848 4.00441 8.23848 3.81446 8.12132 3.6973L6.21213 1.78811ZM6.3 7.00024L6.3 2.00024L5.7 2.00024L5.7 7.00024L6.3 7.00024Z"
+                                            fill="black" />
+                                        <path
+                                            d="M5.78787 12.2124C5.90502 12.3295 6.09497 12.3295 6.21213 12.2124L8.12132 10.3032C8.23848 10.186 8.23848 9.99608 8.12132 9.87892C8.00416 9.76177 7.81421 9.76177 7.69706 9.87892L6 11.576L4.30294 9.87892C4.18579 9.76177 3.99584 9.76177 3.87868 9.87892C3.76152 9.99608 3.76152 10.186 3.87868 10.3032L5.78787 12.2124ZM5.7 7.00024L5.7 12.0002L6.3 12.0002L6.3 7.00024L5.7 7.00024Z"
+                                            fill="black" />
+                                    </svg>
+                                    <p class="storage__option-stats-parameter-text">Высота</p>
+                                </div>
+                            </div>
+                            <div class="storage__option-stats-values">
+                                <p class="storage__option-stats-value">0.0 м2</p>
+                                <p class="storage__option-stats-value">0 м2</p>
+                                <p class="storage__option-stats-value">000 см</p>
+                                <p class="storage__option-stats-value">000 см</p>
+                            </div>
+                        </div>
+                        <button data-btn-book class="storage__option-btn">Забронировать</button>
+                    </div>
+                </div>
+            </div>
+            <div class="our-area">
+                <p class="section-header">НАША ПЛОЩАДЬ</p>
+                <div class="our-area__picture-wrp">
+                    <img class="our-area__picture" src="img/StorageArea.jpg" alt="Наша площадь">
+                </div>
+                <p class="our-area__description">Надежное хранение и быстрая отправка товаров на площади более 1500 м2
+                </p>
+            </div>
+        </div>
+        <div id="special-offer" data-item-nav-page class="special-offer__wrp">
+            <p class="section-header special-offer__header">СПЕЦПРЕДЛОЖЕНИЕ</p>
+            <div class="special-offer">
+                <p class="special-offer__regular-text">Получи</p>
+                <p class="special-offer__bold-text">сертификат на скидку 200 грн</p>
+                <button data-btn-book class="special-offer__btn">Отправить</button>
+            </div>
+        </div>
+        <div class="main-wrp">
+            <div class="care">
+                <p class="section-header care__header">ЗАБОТА О ВАШЕМ ГРУЗЕ</p>
+                <div class="care__sections-wrp">
+                    <div class="care__line"></div>
+                    <div class="care__section">
+                        <div data-wow-offset="200" class="care__circle one wow animate__animated animate__bounceInLeft">
+                            <div class="care__circle-number-wrp">
+                                <p class="care__circle-number">01</p>
+                            </div>
+                            <p class="care__circle-text">Качесвенная упаковка для хранения и отправки</p>
+                        </div>
+                        <div data-wow-offset="200" class="care__circle two wow animate__animated animate__bounceInUp">
+                            <div class="care__circle-number-wrp">
+                                <p class="care__circle-number">02</p>
+                            </div>
+                            <p class="care__circle-text">Весь комплекс сопроводительной документации грузов</p>
+                        </div>
+                        <div data-wow-offset="200"
+                            class="care__circle three care__circle one wow animate__animated animate__bounceInRight">
+                            <div class="care__circle-number-wrp">
+                                <p class="care__circle-number">03</p>
+                            </div>
+                            <p class="care__circle-text">Круглосуточная охрана и современные системы безопасности и
+                                видеонаблюдения</p>
+                        </div>
+                    </div>
+                    <div class="care__line"></div>
+                    <div class="care__section">
+                        <div data-wow-offset="200"
+                            class="care__circle four wow animate__animated animate__bounceInLeft">
+                            <div class="care__circle-number-wrp">
+                                <p class="care__circle-number">04</p>
+                            </div>
+                            <p class="care__circle-text">Пожарная безопасность, современные системы пожаротушения</p>
+                        </div>
+                        <div data-wow-offset="200" class="care__circle five wow animate__animated animate__bounceInUp">
+                            <div class="care__circle-number-wrp">
+                                <p class="care__circle-number">05</p>
+                            </div>
+                            <p class="care__circle-text">Полная ответственность за сохранность груза(во время
+                                транспортировки, во время хранения)</p>
+                        </div>
+                        <div data-wow-offset="200"
+                            class="care__circle six wow animate__animated animate__bounceInRight">
+                            <div class="care__circle-number-wrp">
+                                <p class="care__circle-number">06</p>
+                            </div>
+                            <p class="care__circle-text">Температурный режим фиксирована: +22С° в летний период, +15С°
+                                в зимний период</p>
+                        </div>
+                    </div>
+                    <div class="care__line"></div>
+                </div>
+                <img class="care__picture" src="img/Flexibility.png" alt="Мы всегда идем на встречу клиенту">
+                <div class="care__picture-description">
+                    <p class="care__picture-description-text">гибкая система для сотрудничества мы всегда идем на
+                        встречу нашему клиенту</p>
+                </div>
+            </div>
+            <div id="payment" data-item-nav-page class="payment">
+                <p class="section-header">ОПЛАТА</p>
+                <div class="payment__picture">
+                    <p class="payment__picture-header">Баннер об оплате</p>
+                    <p class="payment__picture-text">и немного о самом баннере</p>
+                    <div class="payment__methods">
+                        <div class="payment__method">
+                            <svg class="payment__svg" width="32" height="28" viewBox="0 0 32 28" fill="none">
+                                <path
+                                    d="M10.7219 24.9137C10.9083 24.9093 11.0933 24.948 11.2629 25.027C11.4124 25.0992 11.5449 25.2034 11.6514 25.3324V23.5839H12.1065V27.6583H11.6514V27.2989C11.5443 27.4266 11.4119 27.5298 11.2629 27.6016C11.0933 27.6806 10.9083 27.7194 10.7219 27.715C10.5437 27.7164 10.3672 27.6807 10.203 27.6101C10.0455 27.5428 9.90299 27.4437 9.78399 27.3188C9.6636 27.1911 9.56888 27.0406 9.50518 26.8758C9.37018 26.5141 9.37018 26.1143 9.50518 25.7525C9.56894 25.5878 9.66366 25.4375 9.78399 25.3098C9.90305 25.1849 10.0456 25.0858 10.203 25.0183C10.3672 24.9479 10.5438 24.9123 10.7219 24.9137ZM10.7747 25.3496C10.6465 25.3477 10.5193 25.3733 10.4014 25.4245C10.2926 25.4722 10.1948 25.5425 10.1142 25.631C10.0339 25.7201 9.97166 25.8244 9.93107 25.9381C9.88795 26.0586 9.86637 26.186 9.86735 26.3143C9.86633 26.4427 9.88843 26.5703 9.93255 26.6906C9.97386 26.8042 10.0365 26.9085 10.117 26.9976C10.1978 27.0862 10.2956 27.157 10.4042 27.2055C10.521 27.2575 10.6473 27.2836 10.7747 27.2821C10.9004 27.2836 11.0251 27.2585 11.1408 27.2085C11.249 27.1615 11.3463 27.0921 11.4267 27.0047C11.5077 26.9157 11.5708 26.8114 11.6125 26.6976C11.7014 26.4506 11.7014 26.1794 11.6125 25.9324C11.5704 25.8192 11.5073 25.7154 11.4267 25.6267C11.3462 25.5394 11.2489 25.4701 11.1408 25.4232C11.0251 25.3731 10.9004 25.3481 10.7747 25.3496ZM14.132 24.9137C14.3027 24.9119 14.4719 24.9466 14.6286 25.0156C14.7775 25.0814 14.9108 25.1788 15.0198 25.3014C15.1323 25.4298 15.2195 25.5792 15.2766 25.7414C15.3402 25.9225 15.3726 26.1135 15.3722 26.3059C15.3722 26.3361 15.3713 26.3658 15.3694 26.395C15.3675 26.4241 15.3656 26.4519 15.3639 26.4783H13.2912C13.3042 26.6054 13.3394 26.729 13.3952 26.8434C13.4443 26.9424 13.5117 27.0307 13.5936 27.1036C13.6732 27.1735 13.7656 27.2265 13.8656 27.2594C13.9695 27.2937 14.0782 27.3109 14.1874 27.3104C14.3376 27.3114 14.4865 27.2825 14.6258 27.2254C14.7626 27.1688 14.8892 27.0894 15.0004 26.9905L15.2418 27.3074C15.1646 27.3814 15.08 27.4469 14.9893 27.5027C14.9052 27.5542 14.8159 27.5964 14.723 27.6286C14.6327 27.6595 14.5398 27.6818 14.4455 27.6951C14.3508 27.7083 14.2552 27.7149 14.1596 27.715C13.9751 27.7171 13.7918 27.683 13.6199 27.6145C13.4608 27.5506 13.3166 27.4532 13.1969 27.3286C13.0763 27.2017 12.9824 27.0511 12.9207 26.8859C12.7895 26.5181 12.7895 26.1149 12.9207 25.7471C12.9817 25.5822 13.0747 25.4315 13.194 25.3041C13.3118 25.1807 13.4529 25.083 13.6089 25.0169C13.7747 24.947 13.9526 24.9119 14.132 24.9137ZM14.1236 25.324C14.0154 25.3224 13.908 25.3421 13.8072 25.382C13.7158 25.4188 13.6324 25.4736 13.5617 25.5433C13.4908 25.6145 13.4326 25.6978 13.3896 25.7893C13.343 25.889 13.3117 25.9954 13.2968 26.1048H14.9088C14.896 25.9935 14.8665 25.8848 14.8214 25.7825C14.7811 25.6908 14.7247 25.6073 14.655 25.5362C14.5874 25.4684 14.5072 25.415 14.4191 25.3793C14.325 25.3416 14.2246 25.3228 14.1236 25.324ZM17.47 24.9137C17.6476 24.9122 17.8237 24.9478 17.9873 25.0183C18.1441 25.086 18.286 25.1852 18.4046 25.3098C18.5253 25.4375 18.6205 25.5879 18.6851 25.7525C18.8219 26.114 18.8219 26.5144 18.6851 26.8758C18.6206 27.0406 18.5253 27.1911 18.4046 27.3188C18.2861 27.4435 18.1442 27.5425 17.9873 27.6101C17.8237 27.6808 17.6477 27.7165 17.47 27.715C17.2826 27.7196 17.0967 27.6809 16.9261 27.6016C16.7776 27.5303 16.6459 27.427 16.5403 27.2989V27.6583H16.0879V23.5839H16.5403V25.3297C16.646 25.2016 16.7776 25.0983 16.9261 25.027C17.0967 24.9478 17.2826 24.909 17.47 24.9137ZM17.4171 25.3496C17.2913 25.3481 17.1665 25.3732 17.0506 25.4232C16.9426 25.4701 16.8455 25.5394 16.7652 25.6267C16.6845 25.7154 16.6214 25.8192 16.5793 25.9324C16.4902 26.1794 16.4902 26.4506 16.5793 26.6976C16.621 26.8114 16.6842 26.9157 16.7652 27.0047C16.8454 27.0922 16.9426 27.1616 17.0506 27.2085C17.1665 27.2585 17.2913 27.2835 17.4171 27.2821C17.545 27.2839 17.6719 27.2578 17.7891 27.2055C17.8971 27.1566 17.9944 27.0859 18.0749 26.9976C18.1551 26.9086 18.2172 26.8042 18.2576 26.6906C18.301 26.5701 18.3228 26.4426 18.3218 26.3143C18.3227 26.1859 18.3006 26.0584 18.2566 25.9381C18.215 25.8245 18.1522 25.7203 18.0717 25.631C17.9916 25.5429 17.8944 25.4726 17.7864 25.4245C17.6698 25.3734 17.544 25.3478 17.4171 25.3496ZM19.7255 23.6942C19.8117 23.694 19.8945 23.7286 19.9558 23.7904C19.9862 23.821 20.0103 23.8576 20.0265 23.898C20.0428 23.9383 20.0509 23.9816 20.0504 24.0252C20.0506 24.069 20.042 24.1124 20.0253 24.1527C20.0091 24.1916 19.9854 24.2268 19.9556 24.2562C19.9258 24.2856 19.8905 24.3086 19.8519 24.3238C19.8117 24.34 19.7688 24.3481 19.7255 24.3478C19.6828 24.3482 19.6404 24.34 19.6007 24.3238C19.5629 24.3084 19.5284 24.2853 19.4995 24.256C19.4706 24.2263 19.4476 24.1913 19.4316 24.1527C19.4147 24.1125 19.4062 24.069 19.4065 24.0252C19.406 23.9805 19.4146 23.9362 19.4316 23.895C19.4478 23.8562 19.4708 23.8207 19.4995 23.7904C19.5289 23.7597 19.5641 23.7354 19.6029 23.7189C19.6417 23.7024 19.6834 23.694 19.7255 23.6942ZM19.9558 27.6583H19.5037V24.9703H19.9558V27.6583ZM22.6609 25.3918H21.5538V26.702C21.5518 26.7908 21.5645 26.8792 21.5915 26.9636C21.6129 27.0305 21.6484 27.0918 21.6954 27.1434C21.7391 27.1901 21.7928 27.2259 21.8522 27.248C21.9158 27.2713 21.9829 27.2828 22.0505 27.2821C22.1479 27.2821 22.2447 27.2648 22.3363 27.2311C22.4256 27.1988 22.5104 27.155 22.5888 27.1009L22.8026 27.4488C22.6948 27.5276 22.5771 27.5913 22.4528 27.6384C22.3116 27.6912 22.1621 27.7171 22.0117 27.715C21.8816 27.7169 21.7521 27.6963 21.6289 27.654C21.5201 27.6163 21.4216 27.5528 21.3416 27.4687C21.2595 27.3795 21.1978 27.2728 21.1613 27.1562C21.1169 27.012 21.0958 26.8615 21.0988 26.7105V25.3918H20.5356V24.9703H21.0988V24.1271H21.5538V24.9703H22.6609V25.3918Z"
+                                    fill="black" />
+                                <path d="M20.2878 2.39683H11.6706V18.1898H20.2878V2.39683Z" fill="#FF5F00" />
+                                <path
+                                    d="M12.2392 10.2935C12.2378 8.77246 12.5759 7.27106 13.2278 5.90298C13.8797 4.53491 14.8283 3.33604 16.0017 2.39713C14.5488 1.2326 12.8038 0.508412 10.9664 0.307339C9.12888 0.106266 7.27299 0.436419 5.61082 1.26007C3.94864 2.08372 2.54724 3.36763 1.56679 4.96505C0.586347 6.56248 0.0664062 8.40897 0.0664062 10.2935C0.0664062 12.178 0.586347 14.0245 1.56679 15.6219C2.54724 17.2193 3.94864 18.5032 5.61082 19.3269C7.27299 20.1505 9.12888 20.4807 10.9664 20.2796C12.8038 20.0785 14.5488 19.3544 16.0017 18.1898C14.8283 17.2509 13.8797 16.052 13.2278 14.684C12.5759 13.3159 12.2378 11.8145 12.2392 10.2935Z"
+                                    fill="#EB001B" />
+                                <path
+                                    d="M30.997 16.5167V16.1934H31.1249V16.1276H30.7994V16.1934H30.9273V16.5167H30.997ZM31.6292 16.5167V16.1271H31.5295L31.4145 16.3951L31.2998 16.1271H31.2001V16.5167H31.2705V16.2228L31.3779 16.4762H31.4512L31.5588 16.2222V16.5167H31.6292Z"
+                                    fill="#F79E1B" />
+                                <path
+                                    d="M22.0883 0.250012C19.8801 0.246521 17.7358 1.00305 16.0017 2.39713C17.1742 3.33696 18.1219 4.53604 18.7736 5.9039C19.4254 7.27176 19.7641 8.7727 19.7641 10.2935C19.7641 11.8143 19.4254 13.3152 18.7736 14.6831C18.1219 16.0509 17.1742 17.25 16.0017 18.1898C17.2361 19.1792 18.6843 19.8534 20.226 20.1561C21.7678 20.4588 23.3582 20.3813 24.8646 19.9299C26.3709 19.4786 27.7497 18.6666 28.8859 17.5616C30.022 16.4566 30.8827 15.0906 31.396 13.5776C31.9094 12.0645 32.0606 10.4482 31.837 8.86351C31.6135 7.27877 31.0216 5.7715 30.1108 4.46737C29.2 3.16324 27.9967 2.10004 26.6012 1.36642C25.2056 0.632805 23.6583 0.250029 22.0883 0.250012Z"
+                                    fill="#F79E1B" />
+                            </svg>
+                        </div>
+                        <div class="payment__method">
+                            <svg class="payment__svg" width="40" height="14" viewBox="0 0 40 14" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M9.967 13.0782H6.57226L4.02662 2.88351C3.90579 2.41455 3.64924 1.99997 3.27186 1.80457C2.33007 1.31352 1.29229 0.922724 0.160156 0.725626V0.33313H5.62881C6.38357 0.33313 6.94963 0.922724 7.04398 1.60747L8.3648 8.96126L11.7579 0.33313H15.0583L9.967 13.0782ZM16.9429 13.0782H13.7368L16.3768 0.33313H19.5829L16.9429 13.0782ZM23.7339 3.86183C23.8283 3.17538 24.3943 2.78289 25.0547 2.78289C26.0925 2.68434 27.223 2.88144 28.1665 3.37078L28.7325 0.626704C27.7891 0.234207 26.7513 0.0371094 25.8095 0.0371094C22.6978 0.0371094 20.4335 1.80249 20.4335 4.25262C20.4335 6.11656 22.0374 7.09525 23.1695 7.68485C24.3943 8.27274 24.8661 8.66524 24.7717 9.25313C24.7717 10.135 23.8283 10.5275 22.8865 10.5275C21.7543 10.5275 20.6222 10.2335 19.5861 9.74248L19.02 12.4883C20.1522 12.9776 21.377 13.1747 22.5091 13.1747C25.9982 13.2716 28.1665 11.5079 28.1665 8.86064C28.1665 5.52696 23.7339 5.33157 23.7339 3.86183ZM39.385 13.0782L36.8394 0.33313H34.105C33.539 0.33313 32.9729 0.725626 32.7842 1.31352L28.0703 13.0782H31.3707L32.0295 11.216H36.0846L36.462 13.0782H39.385ZM34.5781 3.76392L35.5199 8.56733H32.8799L34.5781 3.76392Z"
+                                    fill="#172B85" />
+                            </svg>
+                        </div>
+                        <div class="payment__method">
+                            <svg class="payment__svg" width="48" height="20" viewBox="0 0 48 20" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M22.1941 15.6443V9.77496H25.0992C26.2897 9.77496 27.2944 9.35902 28.1135 8.5387L28.3101 8.33073C29.8064 6.63232 29.7081 3.98649 28.1135 2.41517C27.3163 1.5833 26.2241 1.1327 25.0992 1.15581H20.4358V15.6443H22.1941ZM22.1944 7.99554V2.93497H25.1436C25.7772 2.93497 26.3779 3.18915 26.8258 3.6513C27.7761 4.62182 27.7979 6.23936 26.8804 7.24454C26.4326 7.74136 25.799 8.01865 25.1436 7.99554H22.1944Z"
+                                    fill="#3C4043" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M36.5121 6.50514C35.7586 5.77725 34.7319 5.40752 33.4323 5.40752C31.7613 5.40752 30.5054 6.05454 29.6753 7.33701L31.2262 8.3653C31.7941 7.48721 32.5695 7.04817 33.5524 7.04817C34.175 7.04817 34.7756 7.2908 35.2453 7.72984C35.704 8.14578 35.9661 8.74658 35.9661 9.38204V9.80953C35.2889 9.4167 34.4371 9.20873 33.3886 9.20873C32.1654 9.20873 31.1825 9.50913 30.4508 10.1215C29.719 10.7338 29.3477 11.5426 29.3477 12.5709C29.3259 13.5068 29.7081 14.3964 30.3852 14.9972C31.0733 15.6442 31.947 15.9677 32.9736 15.9677C34.1859 15.9677 35.147 15.4016 35.8787 14.2693H35.9551V15.6442H37.637V9.53224C37.637 8.24976 37.2657 7.23303 36.5121 6.50514ZM31.7398 13.8188C31.3793 13.5415 31.1609 13.0909 31.1609 12.6056C31.1609 12.0626 31.4012 11.612 31.8709 11.2538C32.3515 10.8956 32.9523 10.7108 33.6623 10.7108C34.6453 10.6992 35.41 10.9303 35.9561 11.3925C35.9561 12.1781 35.6612 12.8598 35.0823 13.4375C34.558 13.9921 33.848 14.304 33.1052 14.304C32.6136 14.3156 32.133 14.1423 31.7398 13.8188Z"
+                                    fill="#3C4043" />
+                                <path
+                                    d="M41.4159 20L47.2916 5.73102H45.3804L42.6609 12.8482H42.6282L39.8432 5.73102H37.932L41.7872 15.0087L39.6029 20H41.4159Z"
+                                    fill="#3C4043" />
+                                <path
+                                    d="M16.1237 8.50409C16.1237 7.93795 16.08 7.37181 15.9926 6.81723H8.57701V10.0176H12.8254C12.6507 11.0459 12.0828 11.9702 11.2528 12.5479V14.6276H13.7865C15.2718 13.1834 16.1237 11.0459 16.1237 8.50409Z"
+                                    fill="#4285F4" />
+                                <path
+                                    d="M8.57731 16.6381C10.6961 16.6381 12.4869 15.8985 13.7865 14.6276L11.2528 12.5479C10.5429 13.0563 9.63669 13.3452 8.57731 13.3452C6.52409 13.3452 4.78759 11.8779 4.16507 9.91373H1.55485V12.0627C2.88726 14.8703 5.60669 16.6381 8.57731 16.6381Z"
+                                    fill="#34A853" />
+                                <path
+                                    d="M4.16507 9.91373C3.83737 8.88544 3.83769 7.76467 4.16538 6.72482V4.58737H1.55475C0.429667 6.93279 0.429667 9.70571 1.55475 12.0511L4.16507 9.91373Z"
+                                    fill="#FBBC04" />
+                                <path
+                                    d="M8.57731 3.29334C9.70222 3.27024 10.7834 3.72084 11.5916 4.54116L13.8414 2.16107C12.4107 0.751501 10.5322 -0.0226048 8.57731 0.000502834C5.60669 0.000502834 2.88716 1.77979 1.55475 4.58737L4.16507 6.73638C4.78759 4.76068 6.52409 3.29334 8.57731 3.29334Z"
+                                    fill="#EA4335" />
+                            </svg>
+                        </div>
+                        <div class="payment__method">
+                            <svg class="payment__svg" width="42" height="20" viewBox="0 0 42 20" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M7.77547 3.04235C7.287 3.67567 6.50546 4.1752 5.72392 4.10384C5.62623 3.24751 6.00886 2.33766 6.45662 1.77569C6.94508 1.12453 7.79989 0.66068 8.49188 0.625C8.57329 1.51701 8.25579 2.39118 7.77547 3.04235ZM8.48366 4.27327C7.79514 4.22985 7.16689 4.50015 6.65944 4.71848C6.33288 4.85898 6.05635 4.97796 5.84597 4.97796C5.60987 4.97796 5.32192 4.85262 4.99862 4.71189C4.57499 4.52749 4.09066 4.31667 3.58276 4.32679C2.41859 4.34463 1.33583 5.06716 0.741536 6.21785C-0.47962 8.51923 0.424035 11.9267 1.60449 13.7999C2.1825 14.7276 2.87449 15.7445 3.78628 15.7088C4.18742 15.6922 4.47597 15.5581 4.7746 15.4192C5.1184 15.2594 5.47555 15.0933 6.03321 15.0933C6.57154 15.0933 6.91307 15.2551 7.24092 15.4103C7.55265 15.5579 7.85201 15.6997 8.29642 15.691C9.24078 15.6731 9.83507 14.7633 10.4131 13.8356C11.0369 12.8399 11.311 11.8682 11.3526 11.7208L11.3574 11.7037C11.3564 11.7026 11.3487 11.6987 11.3351 11.6919C11.1266 11.5873 9.53286 10.7879 9.51757 8.64411C9.50222 6.84473 10.7817 5.93305 10.9831 5.78954C10.9954 5.7808 11.0036 5.77491 11.0074 5.77184C10.1933 4.45167 8.92328 4.30895 8.48366 4.27327ZM15.021 15.5929V1.68646H19.7835C22.2421 1.68646 23.9598 3.54184 23.9598 6.25354C23.9598 8.96525 22.2095 10.8385 19.7184 10.8385H16.9911V15.5929H15.021ZM16.9909 3.50625H19.2623C20.9719 3.50625 21.9488 4.5053 21.9488 6.26256C21.9488 8.01981 20.9719 9.02778 19.2541 9.02778H16.9909V3.50625ZM30.4646 13.9248C29.9436 15.013 28.7957 15.6999 27.5583 15.6999C25.7265 15.6999 24.4484 14.5046 24.4484 12.7027C24.4484 10.9187 25.6858 9.8929 27.9735 9.74126L30.4321 9.5807V8.81357C30.4321 7.68072 29.7563 7.06524 28.5515 7.06524C27.5583 7.06524 26.8337 7.6272 26.6872 8.48353H24.9124C24.9694 6.68167 26.5162 5.37042 28.6085 5.37042C30.8635 5.37042 32.3289 6.66383 32.3289 8.67085V15.5928H30.5053V13.9248H30.4646ZM28.0873 14.0498C27.0371 14.0498 26.3696 13.4967 26.3696 12.6493C26.3696 11.7751 27.0127 11.2667 28.242 11.1864L30.4319 11.0348V11.8197C30.4319 13.1221 29.4225 14.0498 28.0873 14.0498ZM38.3776 16.137C37.5879 18.5722 36.6843 19.375 34.763 19.375C34.6165 19.375 34.128 19.3572 34.014 19.3215V17.6534C34.1361 17.6713 34.4374 17.6891 34.592 17.6891C35.4631 17.6891 35.9516 17.2877 36.2528 16.2441L36.4319 15.6286L33.0941 5.50427H35.1538L37.474 13.7197H37.5147L39.8349 5.50427H41.8376L38.3776 16.137Z"
+                                    fill="black" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-item-nav-page class="communication">
+                <p class="section-header">ОСТАЛИСЬ ВОПРОСЫ?</p>
+                <form class="communication__form" action="">
+                    <p class="communication__form-header">Оставьте свои данные и наш менеджер как можно скорее свяжется
+                        с вами</p>
+                    <input class="communication__form-input" type="text" placeholder="ФИО*">
+                    <input class="communication__form-input" type="email" placeholder="E-mail*">
+                    <input class="communication__form-input" type="tel" placeholder="Телефон*">
+                    <input class="communication__form-input" type="text" placeholder="Комментарий*">
+                    <label class="communication__form-checkbox-wrp">
+                        Я погоджуюся з <a class="communication__form-checkbox-link" href="#">політикою конфіденційності
+                            компанії</a>
+                        <input class="communication__form-checkbox" type="checkbox" checked="checked">
+                        <span class="communication__form-fake-checkbox"></span>
+                    </label>
+                    <button class="communication__form-btn">Оставить контакты</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer id="contacts" class="footer">
+        <div class="footer__wrp">
+            <div class="footer__contacts">
+                <a href="#">
+                    <img class="footer__logo" src="img/logo-footer.svg" alt="LogicLink">
+                </a>
+                <div class="footer__mail-and-addres">
+                    <div class="footer__mail-and-addres-line">
+                        <svg class="footer__mail-and-addres-svg" width="36" height="37" viewBox="0 0 36 37" fill="none">
+                            <rect x="6" y="9.69531" width="24" height="18" rx="2" fill="#f5643e" stroke="#0A0A0A"
+                                stroke-width="1.5" />
+                            <path
+                                d="M6 14.1953L17.1056 19.7481C17.6686 20.0296 18.3314 20.0296 18.8944 19.7481L30 14.1953"
+                                stroke="#0A0A0A" stroke-width="1.5" />
+                        </svg>
+                        <a href="mailto:logic.link@gmail.com">logic.link@gmail.com</a>
+                    </div>
+                    <div class="footer__mail-and-addres-line">
+                        <svg class="footer__mail-and-addres-svg" width="36" height="37" viewBox="0 0 36 37" fill="none">
+                            <path
+                                d="M29.0418 26.1953C30.1609 26.8794 30.75 27.6554 30.75 28.4453C30.75 29.2352 30.1609 30.0112 29.0418 30.6953C27.9228 31.3794 26.3132 31.9475 24.375 32.3424C22.4368 32.7374 20.2381 32.9453 18 32.9453C15.7619 32.9453 13.5632 32.7374 11.625 32.3424C9.68676 31.9475 8.07722 31.3794 6.95818 30.6953C5.83913 30.0112 5.25 29.2352 5.25 28.4453C5.25 27.6554 5.83913 26.8794 6.95818 26.1953"
+                                stroke="#f5643e" stroke-width="1.5" stroke-linecap="round" />
+                            <path
+                                d="M29.25 15.6953C29.25 23.4658 20.4764 28.6252 18.4252 29.7252C18.1555 29.8699 17.8445 29.8699 17.5748 29.7252C15.5237 28.6252 6.75 23.4658 6.75 15.6953C6.75 8.94531 12.201 4.44531 18 4.44531C24 4.44531 29.25 8.94531 29.25 15.6953Z"
+                                fill="#f5643e" stroke="#0A0A0A" stroke-width="1.5" />
+                            <circle cx="18" cy="15.6953" r="5.25" fill="#0A0A0A" stroke="#0A0A0A" stroke-width="1.5" />
+                        </svg>
+                        <p>г. Одесса, ул. Моторный переулок 8б</p>
+                    </div>
+                </div>
+                <div class="footer__line-mobile"></div>
+                <div class="footer__number">
+                    <a class="footer__telephone" href="tel:+380800222333">093 312 44 83</a>
+                    <p class="footer__number-description">*звонок бесплатный</p>
+                </div>
+            </div>
+            <div class="footer__line"></div>
+            <div class="footer__socials">
+                <a href="#">
+                    <svg width="44" height="44" viewBox="0 0 44 44" fill="none">
+                        <path
+                            d="M27.3839 23.4321L28.0108 19.4489H24.149V16.8598C24.149 15.7707 24.6882 14.7064 26.4122 14.7064H28.1926V11.3145C27.1558 11.1492 26.1081 11.0597 25.058 11.0469C21.8796 11.0469 19.8045 12.9576 19.8045 16.4117V19.4489H16.2812V23.4321H19.8045V33.0664H24.149V23.4321H27.3839Z"
+                            fill="#f5643e" />
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg width="44" height="44" viewBox="0 0 44 44" fill="none">
+                        <path
+                            d="M18.3383 22.0098C18.3383 19.983 19.9804 18.3396 22.0066 18.3396C24.0328 18.3396 25.6758 19.983 25.6758 22.0098C25.6758 24.0365 24.0328 25.68 22.0066 25.68C19.9804 25.68 18.3383 24.0365 18.3383 22.0098ZM16.3548 22.0098C16.3548 25.1322 18.8851 27.6632 22.0066 27.6632C25.1281 27.6632 27.6584 25.1322 27.6584 22.0098C27.6584 18.8874 25.1281 16.3564 22.0066 16.3564C18.8851 16.3564 16.3548 18.8874 16.3548 22.0098ZM26.5613 16.1322C26.5612 16.3935 26.6386 16.649 26.7836 16.8663C26.9287 17.0836 27.1349 17.2531 27.3762 17.3532C27.6175 17.4533 27.883 17.4795 28.1393 17.4286C28.3955 17.3778 28.6309 17.252 28.8157 17.0673C29.0005 16.8826 29.1263 16.6473 29.1774 16.391C29.2285 16.1348 29.2024 15.8691 29.1026 15.6277C29.0027 15.3862 28.8335 15.1798 28.6163 15.0345C28.3992 14.8893 28.1439 14.8117 27.8826 14.8116H27.8821C27.5319 14.8117 27.1962 14.9509 26.9485 15.1985C26.7009 15.4462 26.5616 15.782 26.5613 16.1322ZM17.5599 30.9715C16.4868 30.9226 15.9036 30.7438 15.516 30.5927C15.0021 30.3926 14.6354 30.1543 14.2499 29.7692C13.8644 29.3841 13.6258 29.0177 13.4266 28.5037C13.2755 28.1162 13.0968 27.5325 13.048 26.4591C12.9947 25.2986 12.984 24.95 12.984 22.0099C12.984 19.0697 12.9955 18.7221 13.048 17.5606C13.0969 16.4872 13.277 15.9047 13.4266 15.516C13.6267 15.002 13.865 14.6353 14.2499 14.2496C14.6349 13.864 15.0012 13.6253 15.516 13.4261C15.9034 13.275 16.4868 13.0962 17.5599 13.0474C18.7201 12.994 19.0686 12.9833 22.0066 12.9833C24.9446 12.9833 25.2934 12.9949 26.4546 13.0474C27.5277 13.0963 28.11 13.2764 28.4986 13.4261C29.0124 13.6253 29.3791 13.8646 29.7646 14.2496C30.1501 14.6347 30.3878 15.002 30.5879 15.516C30.739 15.9036 30.9177 16.4872 30.9665 17.5606C31.0199 18.7221 31.0305 19.0697 31.0305 22.0099C31.0305 24.95 31.0199 25.2977 30.9665 26.4591C30.9176 27.5325 30.738 28.116 30.5879 28.5037C30.3878 29.0177 30.1495 29.3845 29.7646 29.7692C29.3796 30.1539 29.0124 30.3926 28.4986 30.5927C28.1111 30.7439 27.5277 30.9227 26.4546 30.9715C25.2944 31.0248 24.9459 31.0355 22.0066 31.0355C19.0673 31.0355 18.7198 31.0248 17.5599 30.9715ZM17.4688 11.0667C16.2971 11.1201 15.4964 11.3059 14.7972 11.5781C14.073 11.8591 13.46 12.2362 12.8474 12.848C12.2349 13.4598 11.8589 14.0739 11.5779 14.7983C11.3058 15.4982 11.12 16.2986 11.0667 17.4707C11.0124 18.6446 11 19.0199 11 22.0098C11 24.9997 11.0124 25.375 11.0667 26.5489C11.12 27.721 11.3058 28.5214 11.5779 29.2213C11.8589 29.9452 12.2349 30.5601 12.8474 31.1716C13.4599 31.7831 14.073 32.1596 14.7972 32.4415C15.4977 32.7137 16.2971 32.8995 17.4688 32.9529C18.643 33.0063 19.0176 33.0196 22.0066 33.0196C24.9956 33.0196 25.3708 33.0071 26.5444 32.9529C27.7162 32.8995 28.5163 32.7137 29.216 32.4415C29.9397 32.1596 30.5532 31.7834 31.1658 31.1716C31.7783 30.5598 32.1535 29.9452 32.4353 29.2213C32.7074 28.5214 32.8941 27.7209 32.9465 26.5489C32.9999 25.3741 33.0123 24.9997 33.0123 22.0098C33.0123 19.0199 32.9999 18.6446 32.9465 17.4707C32.8932 16.2985 32.7074 15.4977 32.4353 14.7983C32.1535 14.0744 31.7774 13.4607 31.1658 12.848C30.5541 12.2352 29.9397 11.8591 29.2169 11.5781C28.5163 11.3059 27.7161 11.1192 26.5453 11.0667C25.3717 11.0133 24.9965 11 22.0075 11C19.0184 11 18.643 11.0124 17.4688 11.0667Z"
+                            fill="#f5643e" />
+                        <path
+                            d="M14.7972 11.5781C15.4964 11.3059 16.2971 11.1201 17.4688 11.0667C18.643 11.0124 19.0184 11 22.0075 11C24.9965 11 25.3717 11.0133 26.5453 11.0667C27.7161 11.1192 28.5163 11.3059 29.2169 11.5781C29.9397 11.8591 30.5542 12.2352 31.1658 12.848C31.7774 13.4607 32.1535 14.0744 32.4353 14.7983C32.7074 15.4977 32.8932 16.2985 32.9465 17.4707C32.9999 18.6446 33.0123 19.0199 33.0123 22.0098C33.0123 24.9997 32.9999 25.3741 32.9465 26.5489C32.8941 27.7209 32.7074 28.5214 32.4353 29.2213C32.1535 29.9452 31.7783 30.5598 31.1658 31.1716C30.5532 31.7834 29.9397 32.1596 29.216 32.4415C28.5163 32.7137 27.7162 32.8995 26.5444 32.9529C25.3708 33.0071 24.9956 33.0196 22.0066 33.0196C19.0176 33.0196 18.643 33.0063 17.4688 32.9529C16.2971 32.8995 15.4977 32.7137 14.7972 32.4415C14.073 32.1596 13.4599 31.7831 12.8474 31.1716C12.2349 30.5601 11.8589 29.9452 11.5779 29.2213C11.3058 28.5214 11.12 27.721 11.0667 26.5489C11.0124 25.375 11 24.9997 11 22.0098C11 19.0199 11.0124 18.6446 11.0667 17.4707C11.12 16.2986 11.3058 15.4982 11.5779 14.7983C11.8589 14.0739 12.2349 13.4598 12.8474 12.848C13.46 12.2362 14.073 11.8591 14.7972 11.5781Z"
+                            fill="#f5643e" />
+                        <circle cx="22" cy="22" r="6" fill="#0A0A0A" />
+                        <circle cx="28.5" cy="14.5" r="1.5" fill="#0A0A0A" />
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg width="44" height="44" viewBox="0 0 44 44" fill="none">
+                        <path
+                            d="M12.2409 21.2206C12.2409 21.2206 21.1925 17.4503 24.2971 16.1227C25.4873 15.5917 29.5233 13.8923 29.5233 13.8923C29.5233 13.8923 31.3861 13.1489 31.2308 14.9544C31.179 15.6979 30.7651 18.2999 30.3512 21.1144C29.7302 25.0971 29.0576 29.4516 29.0576 29.4516C29.0576 29.4516 28.9541 30.673 28.0744 30.8854C27.1948 31.0978 25.7459 30.142 25.4873 29.9295C25.2802 29.7702 21.6065 27.3806 20.2611 26.2123C19.8989 25.8937 19.485 25.2565 20.3129 24.513C22.1757 22.7606 24.4006 20.5834 25.7459 19.2027C26.3669 18.5654 26.9878 17.0786 24.4006 18.884C20.7268 21.4861 17.1048 23.9289 17.1048 23.9289C17.1048 23.9289 16.2769 24.4599 14.7246 23.9819C13.1722 23.5041 11.3612 22.8668 11.3612 22.8668C11.3612 22.8668 10.1194 22.0703 12.2409 21.2206Z"
+                            fill="#f5643e" />
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg width="44" height="44" viewBox="0 0 44 44" fill="none">
+                        <path
+                            d="M32.5573 14.748C32.2701 13.668 31.4202 12.816 30.339 12.524C28.384 12 20.54 12 20.54 12C20.54 12 12.7 12 10.741 12.524C9.66375 12.812 8.81392 13.664 8.52267 14.748C8 16.708 8 20.8 8 20.8C8 20.8 8 24.892 8.52267 26.852C8.80993 27.932 9.65976 28.784 10.741 29.076C12.7 29.6 20.54 29.6 20.54 29.6C20.54 29.6 28.384 29.6 30.339 29.076C31.4162 28.788 32.2661 27.936 32.5573 26.852C33.08 24.892 33.08 20.8 33.08 20.8C33.08 20.8 33.08 16.708 32.5573 14.748Z"
+                            fill="#f5643e" />
+                        <path d="M25 21L19 24.4641L19 17.5359L25 21Z" fill="#0A0A0A" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/wow.min.js"></script>
+    <script src="./js/index.js"></script>
+    <!-- <script>
+        new WOW().init();
+    </script> -->
+    <!-- <script type="module" src="../src/index.js"></script> -->
+
+</body>
+
+</html>

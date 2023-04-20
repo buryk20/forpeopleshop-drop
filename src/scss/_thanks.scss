@@ -1,0 +1,42 @@
+.thanks {
+    height: 100vh;
+    @include size-page;
+    @extend %centre-flex;
+    flex-direction: column;
+
+    &__img {
+        margin-bottom: 48px;
+        padding-top: 92px;
+    }
+
+    &__title {
+        margin-bottom: 22px;
+
+        @include font(
+            $fontFamily: $font-moserrat,
+            $fontSize: 40px,
+            $fontWeight: 800,
+            $textAling: center
+        );
+
+        @include __860 {
+            font-size: 30px;
+        }
+    }
+
+    &__text {
+        max-width: 460px;
+        margin-bottom: 48px;
+
+        @include font(
+            $fontFamily: $font-noto-sans-mono,
+            $fontSize: 20px,
+            $fontWeight: 400,
+            $textAling: center
+        );
+
+        @include __860 {
+            font-size: 16px;
+        }
+    }
+}

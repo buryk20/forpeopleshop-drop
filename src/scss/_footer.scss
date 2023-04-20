@@ -1,0 +1,141 @@
+.footer {
+    background-color: $color-black;
+
+    width: 100%;
+
+    padding: 75px 0 60px 0;
+
+    @include __860 {
+        padding: 25px 0 40px 0;
+    }
+
+    &__wrp {
+        @include size-page;
+
+        @include __860 {
+            padding: 0 20px;
+        }
+    }
+
+    &__contacts {
+        display: flex;
+        justify-content: space-between;
+
+        width: 100%;
+
+        margin-bottom: 30px;
+
+        @include __860 {
+            flex-direction: column;
+            align-items: center;
+
+            margin-bottom: 16px;
+        }
+    }
+
+    &__logo {
+        @include __860 {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__mail-and-addres {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        @include __860 {
+            margin-bottom: 30px;
+        }
+    }
+
+    &__mail-and-addres-line {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+
+        @include font($font-inter, 18px, 400, 22px, left);
+
+        color: $color-white;
+
+        @include __860 {
+            gap: 15px;
+
+            padding: 0 20px;
+        }
+    }
+
+    &__mail-and-addres-svg {
+        flex-shrink: 0;
+    }
+
+    &__number {
+        @include __860 {
+            align-self: flex-end;
+        }
+    }
+
+    &__telephone {
+        @include font($font-moserrat, 28px, 900, 34px, right);
+
+        color: $color-yelow;
+
+        display: block;
+
+        margin-bottom: 16px;
+
+        @include __860 {
+            margin-bottom: 6px;
+
+            @include font($font-noto-sans-mono, 20px, 900, 27px, right);
+        }
+    }
+
+    &__number-description {
+        @include font($font-inter, 14px, 400, 17px, right);
+
+        color: #7A7878;
+
+        @include __860 {
+            font-size: 12px;
+            line-height: 15px;
+        }
+    }
+
+    &__line {
+        width: 100%;
+
+        background-color: $color-yelow;
+
+        height: 1px;
+
+        margin-bottom: 40px;
+
+        @include __860 {
+            display: none;
+        }
+    }
+
+    &__line-mobile {
+        width: 100%;
+
+        display: none;
+
+        background-color: $color-yelow;
+
+        height: 1px;
+
+        margin-bottom: 16px;
+
+        @include __860 {
+            display: block;
+        }
+    }
+
+    &__socials {
+        display: none;
+        gap: 10px;
+
+        justify-content: center;
+    }
+}

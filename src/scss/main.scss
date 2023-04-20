@@ -1,0 +1,22 @@
+//test
+@import "_normalize.scss";
+@import "_variable.scss";
+@import "_mixin.scss";
+@import "_header.scss";
+@import "_main.scss";
+@import "_footer.scss";
+@import "_thanks.scss";
+
+body {
+  background-color: $color-back;
+  color: $color-black;
+
+  &.black {
+    background-color: $color-black;
+    color: $color-white;
+  }
+
+  &.overflov {
+    overflow: hidden;
+  }
+}
