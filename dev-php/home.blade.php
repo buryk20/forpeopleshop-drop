@@ -18,13 +18,14 @@
                     </div>
                     <div class="about-us__description">
                         <p class="about-us__description-first">{{ __('messages.logic_aboutussection_head1') }}</p>
-                        <p class="about-us__description-second">{{ __('messages.logic_aboutussection_subhead1') }}
-                            <li>{{ __('messages.logic_aboutussection_li1') }}</li>
+                        <p class="about-us__description-first">{{ __('messages.logic_aboutussection_li1') }}</p>
+                        <p class="about-us__description-first">{{ __('messages.logic_aboutussection_li2') }}</p>
+                        <!-- <p class="about-us__description-second">{{ __('messages.logic_aboutussection_subhead1') }}</p> -->
+                            <!-- <li>{{ __('messages.logic_aboutussection_li1') }}</li>
                             <li>{{ __('messages.logic_aboutussection_li2') }}</li>
                             <li>{{ __('messages.logic_aboutussection_li3') }}</li>
-                            <li>{{ __('messages.logic_aboutussection_li4') }}</li>
-                            <li>{{ __('messages.logic_aboutussection_li5') }}</li>
-                        </p>
+                            <li>{{ __('messages.logic_aboutussection_li4') }}</li> -->
+                            <!-- <li>{{ __('messages.logic_aboutussection_li5') }}</li> -->
                     </div>
                 </div>
                 <div class="about-us__benefits">
