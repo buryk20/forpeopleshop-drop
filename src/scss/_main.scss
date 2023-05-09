@@ -80,6 +80,7 @@
 
 .section-header {
   @include font($font-moserrat, 30px, 700, 37px, left);
+  text-transform: uppercase;
 
   margin-bottom: 40px;
 
@@ -228,6 +229,9 @@
   &__benefit-number-wrp {
     width: 66px;
     height: 66px;
+
+    display: flex;
+    flex-shrink: 0;
 
     @extend %centre-flex;
 
@@ -378,6 +382,7 @@
 }
 
 .storage {
+  display: none;
   margin-bottom: 50px;
 
   @include __860 {

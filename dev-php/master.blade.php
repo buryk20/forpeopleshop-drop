@@ -13,16 +13,16 @@
 
     <meta property="og:title" content="{{ __('messages.logic_og_title') }}">
 	<meta property="og:site_name" content="LogicLink">
-	<meta property="og:url" content="https://logiclink.com.ua">
+	<meta property="og:url" content="https://forpeopleshop-drop.com.ua/">
 	<meta property="og:description" content="{{ __('messages.logic_og_description') }}">
 	<meta property="og:type" content="website">
-	<meta property="og:image" content="https://logiclink.com.ua/img/ogimage.png">
+	<meta property="og:image" content="https://forpeopleshop-drop.com.ua/img/ogimage.png">
 	<meta name="twitter:card" content="summary_large_image">
 	<meta property="twitter:domain" content="logiclink.com.ua">
-	<meta property="twitter:url" content="https://logiclink.com.ua/">
+	<meta property="twitter:url" content="https://forpeopleshop-drop.com.ua/">
 	<meta name="twitter:title" content="{{ __('messages.logic_og_title') }}">
 	<meta name="twitter:description" content="{{ __('messages.logic_og_description') }}">
-	<meta name="twitter:image" content="https://logiclink.com.ua/img/ogimage.png">
+	<meta name="twitter:image" content="https://forpeopleshop-drop.com.ua/img/ogimage.png">
 </head>
 <body>
 
