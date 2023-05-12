@@ -7,7 +7,7 @@
             <div class="header__nav-wrp">
                 <a data-nav-header class="header__nav-item" href="{{ LaravelLocalization::localizeUrl('/') }}#about-us">{{ __('messages.logic_header_aboutus') }}</a>
                 <a data-nav-header class="header__nav-item" href="{{ LaravelLocalization::localizeUrl('/') }}#instruction">{{ __('messages.logic_header_instruction') }}</a>
-                <a data-nav-header class="header__nav-item" href="{{ LaravelLocalization::localizeUrl('/') }}#storage">{{ __('messages.logic_header_storage') }}</a>
+                <!-- <a data-nav-header class="header__nav-item" href="{{ LaravelLocalization::localizeUrl('/') }}#storage">{{ __('messages.logic_header_storage') }}</a> -->
                 <a data-nav-header class="header__nav-item" href="{{ LaravelLocalization::localizeUrl('/') }}#special-offer">{{ __('messages.logic_header_offer') }}</a>
                 <a data-nav-header class="header__nav-item" href="{{ LaravelLocalization::localizeUrl('/') }}#payment">{{ __('messages.logic_header_cash') }}</a>
                 <a data-nav-header class="header__nav-item" href="{{ LaravelLocalization::localizeUrl('/') }}#contacts">{{ __('messages.logic_header_contacts') }}</a>
