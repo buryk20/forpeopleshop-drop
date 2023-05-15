@@ -11,6 +11,14 @@
 	<meta name="description" content="{{ __('messages.logic_meta_description') }}">
     <title>{{ __('messages.logic_meta_title') }}</title>
 
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-T9X574K');</script>
+	<!-- End Google Tag Manager -->
+
     <meta property="og:title" content="{{ __('messages.logic_og_title') }}">
 	<meta property="og:site_name" content="LogicLink">
 	<meta property="og:url" content="https://forpeopleshop-drop.com.ua/">
@@ -23,8 +31,13 @@
 	<meta name="twitter:title" content="{{ __('messages.logic_og_title') }}">
 	<meta name="twitter:description" content="{{ __('messages.logic_og_description') }}">
 	<meta name="twitter:image" content="https://forpeopleshop-drop.com.ua/img/ogimage.png">
+
 </head>
 <body>
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T9X574K"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
 
 	@include('partials.header')
 
