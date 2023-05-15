@@ -46,8 +46,8 @@
                 <span class="header__color-change-circle"></span>
                 <img data-btn-color-switching class="header__color-change-sun" src="{{ asset('public/icon/sun-header-icon.svg') }}" alt="sun">
             </button>
-            <a class="header__phone" href="tel:+380800222333">
-                <p>093 312 44 83</p>
+            <a class="header__phone" href="tel:+380932027986">
+                <p>093 202 79 86</p>
             </a>
         </div>
         <div data-menu-mob-conteiner class="header-mob">

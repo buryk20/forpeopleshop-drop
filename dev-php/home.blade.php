@@ -14,7 +14,7 @@
             <div class="about-us__content">
                 <div class="about-us__video-and-description-wrp">
                     <div class="about-us__video-wrp">
-                        <iframe class="about-us__video" src="https://www.youtube.com/embed/Yho1MQ4UIWU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe class="about-us__video" src="https://www.youtube.com/embed/pUFNYcGVbo8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <div class="about-us__description">
                         <p class="about-us__description-first">{{ __('messages.logic_aboutussection_head1') }}</p>

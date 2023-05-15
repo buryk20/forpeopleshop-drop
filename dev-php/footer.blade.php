@@ -24,7 +24,7 @@
                 </div>
                 <div class="footer__line-mobile"></div>
                 <div class="footer__number">
-                    <a class="footer__telephone" href="tel:+380933124483">093 312 44 83</a>
+                    <a class="footer__telephone" href="tel:+380932027986">093 202 79 86</a>
                     <p class="footer__number-description">{{ __('messages.logic_footer_callisfree') }}</p>
                 </div>
             </div>
